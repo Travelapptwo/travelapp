@@ -1,21 +1,52 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-10 06:21:15
+  from "E:\wamp\www\travelapp\mvc\template\index\category.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_596300bbd64b99_36032100',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'd3b63cf2e4fe296550858863123fff02fde30b4a' => 
+    array (
+      0 => 'E:\\wamp\\www\\travelapp\\mvc\\template\\index\\category.html',
+      1 => 1499660475,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_596300bbd64b99_36032100 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title></title>
-    <link rel="stylesheet" href="{CSS_PATH}/basic.css" />
-    <script type="text/javascript" src="{JS_PATH}/rem.js"></script>
-    <link rel="stylesheet" type="text/css" href="{CSS_PATH}/c-main.css"/>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/basic.css" />
+    <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo JS_PATH;?>
+/rem.js"><?php echo '</script'; ?>
+>
+    <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH;?>
+/c-main.css"/>
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_tgrlk8guf7833di.css" />
-    <script type="text/javascript">
+    <?php echo '<script'; ?>
+ type="text/javascript">
     	
    		document.addEventListener('plusready', function(){
    			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
    		
    		});
    	
-    </script>
+    <?php echo '</script'; ?>
+>
 </head>
 <body>
 	<header>
@@ -62,15 +93,26 @@
 		<div class="con">
 			<!--<div class="yuanjiao"></div>-->
 			<ul class="nr">
-				{foreach $result as $v}
+				<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
 				<li>
 					<div class="tu"></div>
 					<div class="tit">
-						<div class="hanyu">{$v["name"]}</div>
-						<div class="yingyu">{$v["Ename"]}</div>
+						<div class="hanyu"><?php echo $_smarty_tpl->tpl_vars['v']->value["name"];?>
+</div>
+						<div class="yingyu"><?php echo $_smarty_tpl->tpl_vars['v']->value["Ename"];?>
+</div>
 					</div>
 				</li>
-				{/foreach}
+				<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
 				<!--<li>-->
 					<!--<div class="tu"></div>-->
 					<!--<div class="tit">-->
@@ -251,4 +293,5 @@
 		</div>
 	</main>
 </body>
-</html>
+</html><?php }
+}
