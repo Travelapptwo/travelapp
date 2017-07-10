@@ -17,7 +17,6 @@
             gallery.slider({
                 interval: 2000
             });
-
         });
     </script>
 </head>
@@ -87,69 +86,72 @@
 <!--列表-->
 <div class="liebiao">
     <ul>
+        {foreach $result as $v}
         <li>
-            <a href="">
+            <a href="##">
+                <!--<div class="xingji">{$v['xingji']}</div>-->
+                <input type="hidden" value="{$v['xingji']}">
                 <div class="liebiao_top">
                     <div class="mark"></div>
                     <img src="{IMG_PATH}/sy_liebiao1.jpg" alt="" class="liebiao_img">
                     <img src="{IMG_PATH}/sy_zhaoxiangji.png" alt="" class="zhaoxiangji">
                 </div>
+
                 <div class="liebiao_bottom">
-                    <p class="title_zimu">zhoubian</p>
-                    <p class="title_zhongwen">周<span>•</span>边<span>•</span>游</p>
+                    <p class="title_zimu">{$v["englishname"]}</p>
+                    <p class="title_zhongwen">{$v["name"]}</p>
                     <div class="wujiaoxing">
+                        {for $i=1 to $v['xingji']}
                         <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                        {/for}
                     </div>
-                    <p class="title">ZHOUBIANXINGB.ANKUAI</p>
+                    <p class="title">{$v["englishname"]}B.ANKUAI</p>
                 </div>
             </a>
         </li>
-        <li>
-            <a href="">
-                <div class="liebiao_top">
-                    <div class="mark"></div>
-                    <img src="{IMG_PATH}/sy_liebiao1.jpg" alt="" class="liebiao_img">
-                    <img src="{IMG_PATH}/sy_zhaoxiangji.png" alt="" class="zhaoxiangji">
-                </div>
-                <div class="liebiao_bottom">
-                    <p class="title_zimu">zhoubian</p>
-                    <p class="title_zhongwen">周<span>•</span>边<span>•</span>游</p>
-                    <div class="wujiaoxing">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                    </div>
-                    <p class="title">ZHOUBIANXINGB.ANKUAI</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <div class="liebiao_top">
-                    <div class="mark"></div>
-                    <img src="{IMG_PATH}/sy_liebiao1.jpg" alt="" class="liebiao_img">
-                    <img src="{IMG_PATH}/sy_zhaoxiangji.png" alt="" class="zhaoxiangji">
-                </div>
-                <div class="liebiao_bottom">
-                    <p class="title_zimu">zhoubian</p>
-                    <p class="title_zhongwen">周<span>•</span>边<span>•</span>游</p>
-                    <div class="wujiaoxing">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                        <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                    </div>
-                    <p class="title">ZHOUBIANXINGB.ANKUAI</p>
-                </div>
-            </a>
-        </li>
+        {/foreach}
+        <!--        <li>
+                    <a href="">
+                        <div class="liebiao_top">
+                            <div class="mark"></div>
+                            <img src="{IMG_PATH}/sy_liebiao1.jpg" alt="" class="liebiao_img">
+                            <img src="{IMG_PATH}/sy_zhaoxiangji.png" alt="" class="zhaoxiangji">
+                        </div>
+                        <div class="liebiao_bottom">
+                            <p class="title_zimu">zhoubian</p>
+                            <p class="title_zhongwen">周<span>•</span>边<span>•</span>游</p>
+                            <div class="wujiaoxing">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                            </div>
+                            <p class="title">ZHOUBIANXINGB.ANKUAI</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="liebiao_top">
+                            <div class="mark"></div>
+                            <img src="{IMG_PATH}/sy_liebiao1.jpg" alt="" class="liebiao_img">
+                            <img src="{IMG_PATH}/sy_zhaoxiangji.png" alt="" class="zhaoxiangji">
+                        </div>
+                        <div class="liebiao_bottom">
+                            <p class="title_zimu">zhoubian</p>
+                            <p class="title_zhongwen">周<span>•</span>边<span>•</span>游</p>
+                            <div class="wujiaoxing">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
+                            </div>
+                            <p class="title">ZHOUBIANXINGB.ANKUAI</p>
+                        </div>
+                    </a>
+                </li>-->
     </ul>
 </div>
 <!--抢购-->
@@ -295,7 +297,7 @@
     //倒计时
     function setTime() {
         var nowdate = new Date();
-        var targettime = new Date(2017,6, 11, 0, 0, 0);
+        var targettime = new Date(2017, 6, 11, 0, 0, 0);
         var cha = targettime.getTime() - nowdate.getTime();
         var hours = Math.floor(cha / (1000 * 60 * 60));
         var minutes = Math.floor(cha / (1000 * 60) % 60);
