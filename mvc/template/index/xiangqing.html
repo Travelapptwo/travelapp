@@ -10,7 +10,7 @@
     <script src="{JS_PATH}/xiangqing.js"></script>
     <link rel="stylesheet" href="{CSS_PATH}/bootstrap.css">
     <link rel="stylesheet" href="{CSS_PATH}/mui.min.css">
-    <link rel="stylesheet" href="{CSS_PATH}/xiangqings.css">
+    <link rel="stylesheet" href="{CSS_PATH}/xiangqing.css">
 
 </head>
 <body>
@@ -32,6 +32,7 @@
         <div class="xk-thr3">旅行•充满激情</div>
     </div>
 </div>
+{foreach $result as $v}
 <div class="xk-title">
     <div class="xk-timg">
         <img src="{IMG_PATH}/xk-sirenlogo.png" alt="">
@@ -40,39 +41,39 @@
         <div class="black-wz">BESTTRAVEL</div>
         <div class="ddd-wz">私人订制优惠旅行</div>
         <div class="ccc-wz">
-            <div class="from">Hainan.S.X</div>
-            <div class="to">BeiJing.S.X</div>
+            <div class="from">{$v["start"]}</div>
+            <div class="to">{$v["end"]}</div>
             <div class="caidan">2343534545</div>
         </div>
     </div>
 </div>
 <div class="xk-message">
-    <div class="xk-m-title">海南网定制往返实惠出行</div>
+    <div class="xk-m-title">{$v["title"]}</div>
     <div class="m-message">
-        <div class="like">4DAY,3NIGHT</div>
-        <div class="sale">90%,OFF</div>
-        <div class="rmb">2400.00</div>
+        <div class="like">{$v["alltime"]}</div>
+        <div class="sale">{$v["discount"]}</div>
+        <div class="rmb">{$v["price"]}</div>
     </div>
     <div class="m-content">
         <div class="neirong">
             <div class="name">出发地点</div>
             <div class="englishname">MEETING PALACE</div>
-            <div class="chufa shuju">北京</div>
+            <div class="chufa shuju">{$v["start"]}</div>
         </div>
         <div class="neirong">
             <div class="name">目的地点</div>
             <div class="englishname">DISIT ACTION</div>
-            <div class="daoda shuju">海南 羽织轴 天堂</div>
+            <div class="daoda shuju">{$v["end"]}</div>
         </div>
         <div class="neirong">
             <div class="name">出发时间</div>
             <div class="englishname">DEPARTURE TIME</div>
-            <div class="chufatime shuju">4月28日、4月29日多日出发</div>
+            <div class="chufatime shuju">{$v["starttime"]}</div>
         </div>
         <div class="neirong">
             <div class="name">交通信息</div>
             <div class="englishname">TRAFFIC MESSAGE</div>
-            <div class="traffic shuju">飞机去、飞机回</div>
+            <div class="traffic shuju">{$v["traffic"]}</div>
         </div>
 
     </div>
@@ -85,6 +86,7 @@
     </div>
 </div>
 <div class="xk-details">
+    <input type="hidden" class="lid" value="{$v['id']}">
     <div class="buttons">
         <div class="button1 button"><span class="hanzi">路线详情</span><span class="eng">ROUTEDETAIL</span></div>
         <div class="button1"><span class="hanzi">用户评价</span><span class="eng">USEREVALUTION</span></div>
@@ -94,10 +96,11 @@
             <img src="{IMG_PATH}/xk-titlebg.png" alt="">
             <div class="chi">路线详情</div>
             <div class="enli">ROUTE INTROCTION</div>
-            <div class="concon"></div>
+            <div class="concon">{$v["routedetail"]}</div>
         </div>
     </div>
 </div>
+{/foreach}
 <footer>
     <div class="foot-button">
         <img src="{IMG_PATH}/xk-shoucang.png" alt="" style="left: 0.4rem;">

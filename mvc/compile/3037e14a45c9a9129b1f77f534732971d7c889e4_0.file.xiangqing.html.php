@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 03:11:40
+/* Smarty version 3.1.30, created on 2017-07-10 04:48:33
   from "F:\wamp\www\travelapp\mvc\template\index\xiangqing.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962d44c8a88b5_78894931',
+  'unifunc' => 'content_5962eb019dd697_15344176',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3037e14a45c9a9129b1f77f534732971d7c889e4' => 
     array (
       0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\index\\xiangqing.html',
-      1 => 1499649099,
+      1 => 1499654912,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962d44c8a88b5_78894931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962eb019dd697_15344176 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -49,7 +49,7 @@ function content_5962d44c8a88b5_78894931 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /mui.min.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
-/xiangqings.css">
+/xiangqing.css">
 
 </head>
 <body>
@@ -71,6 +71,11 @@ function content_5962d44c8a88b5_78894931 (Smarty_Internal_Template $_smarty_tpl)
         <div class="xk-thr3">旅行•充满激情</div>
     </div>
 </div>
+<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
 <div class="xk-title">
     <div class="xk-timg">
         <img src="<?php echo IMG_PATH;?>
@@ -80,39 +85,49 @@ function content_5962d44c8a88b5_78894931 (Smarty_Internal_Template $_smarty_tpl)
         <div class="black-wz">BESTTRAVEL</div>
         <div class="ddd-wz">私人订制优惠旅行</div>
         <div class="ccc-wz">
-            <div class="from">Hainan.S.X</div>
-            <div class="to">BeiJing.S.X</div>
+            <div class="from"><?php echo $_smarty_tpl->tpl_vars['v']->value["start"];?>
+</div>
+            <div class="to"><?php echo $_smarty_tpl->tpl_vars['v']->value["end"];?>
+</div>
             <div class="caidan">2343534545</div>
         </div>
     </div>
 </div>
 <div class="xk-message">
-    <div class="xk-m-title">海南网定制往返实惠出行</div>
+    <div class="xk-m-title"><?php echo $_smarty_tpl->tpl_vars['v']->value["title"];?>
+</div>
     <div class="m-message">
-        <div class="like">4DAY,3NIGHT</div>
-        <div class="sale">90%,OFF</div>
-        <div class="rmb">2400.00</div>
+        <div class="like"><?php echo $_smarty_tpl->tpl_vars['v']->value["alltime"];?>
+</div>
+        <div class="sale"><?php echo $_smarty_tpl->tpl_vars['v']->value["discount"];?>
+</div>
+        <div class="rmb"><?php echo $_smarty_tpl->tpl_vars['v']->value["price"];?>
+</div>
     </div>
     <div class="m-content">
         <div class="neirong">
             <div class="name">出发地点</div>
             <div class="englishname">MEETING PALACE</div>
-            <div class="chufa shuju">北京</div>
+            <div class="chufa shuju"><?php echo $_smarty_tpl->tpl_vars['v']->value["start"];?>
+</div>
         </div>
         <div class="neirong">
             <div class="name">目的地点</div>
             <div class="englishname">DISIT ACTION</div>
-            <div class="daoda shuju">海南 羽织轴 天堂</div>
+            <div class="daoda shuju"><?php echo $_smarty_tpl->tpl_vars['v']->value["end"];?>
+</div>
         </div>
         <div class="neirong">
             <div class="name">出发时间</div>
             <div class="englishname">DEPARTURE TIME</div>
-            <div class="chufatime shuju">4月28日、4月29日多日出发</div>
+            <div class="chufatime shuju"><?php echo $_smarty_tpl->tpl_vars['v']->value["starttime"];?>
+</div>
         </div>
         <div class="neirong">
             <div class="name">交通信息</div>
             <div class="englishname">TRAFFIC MESSAGE</div>
-            <div class="traffic shuju">飞机去、飞机回</div>
+            <div class="traffic shuju"><?php echo $_smarty_tpl->tpl_vars['v']->value["traffic"];?>
+</div>
         </div>
 
     </div>
@@ -125,6 +140,8 @@ function content_5962d44c8a88b5_78894931 (Smarty_Internal_Template $_smarty_tpl)
     </div>
 </div>
 <div class="xk-details">
+    <input type="hidden" class="lid" value="<?php echo $_smarty_tpl->tpl_vars['v']->value['id'];?>
+">
     <div class="buttons">
         <div class="button1 button"><span class="hanzi">路线详情</span><span class="eng">ROUTEDETAIL</span></div>
         <div class="button1"><span class="hanzi">用户评价</span><span class="eng">USEREVALUTION</span></div>
@@ -135,10 +152,17 @@ function content_5962d44c8a88b5_78894931 (Smarty_Internal_Template $_smarty_tpl)
 /xk-titlebg.png" alt="">
             <div class="chi">路线详情</div>
             <div class="enli">ROUTE INTROCTION</div>
-            <div class="concon"></div>
+            <div class="concon"><?php echo $_smarty_tpl->tpl_vars['v']->value["routedetail"];?>
+</div>
         </div>
     </div>
 </div>
+<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
 <footer>
     <div class="foot-button">
         <img src="<?php echo IMG_PATH;?>
