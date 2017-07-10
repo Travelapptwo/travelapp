@@ -1,0 +1,710 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+.banner {
+    width: 100%;
+    height: 5.44rem;
+    position: relative;
+}
+
+.mui-slider .mark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.2;
+}
+
+.mui-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.mui-slider-group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bannertu {
+    width: 100%;
+    height: 5.44rem;
+}
+
+header {
+    width: 100%;
+    height: 0.58rem;
+    position: absolute;
+    top: 0.67rem;
+    left: 0;
+    z-index: 999;
+}
+
+.mui-slider-group img {
+    width: 100%;
+    height: 5.44rem;
+}
+
+.header-left {
+    width: 0.55rem;
+    height: 0.55rem;
+    background: #7532f1;
+    border-radius: 50%;
+    margin-left: 0.24rem;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.header-left img, .header-right img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.header-left img {
+    width: 0.24rem;
+    height: 0.24rem;
+}
+
+.header-middle {
+    width: 4.38rem;
+    height: 0.58rem;
+    background: #1c2023;
+    border: 0.03rem solid #2c70f9;
+    border-radius: 5.53rem;
+    margin-left: 0.83rem;
+    float: left;
+    position: relative;
+}
+
+.dian {
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.zuo {
+    background: #22d2bb;
+    left: 0.19rem;
+}
+
+.you {
+    background: #d0fff9;
+    left: 0.29rem;
+}
+
+.header-middle p {
+    font-size: 0.22rem;
+    color: #a2a3a3;
+    font-family: "三番";
+    font-weight: bold;
+    position: absolute;
+    left: 0.53rem;
+    line-height: 0.58rem;
+}
+
+.header-middle img {
+    width: 0.62rem;
+    height: 0.34rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.2rem;
+    margin: auto;
+}
+
+.header-right {
+    width: 0.59rem;
+    height: 0.59rem;
+    float: right;
+    margin-right: 0.24rem;
+    background: #36d6ea;
+    border-radius: 50%;
+    position: relative;
+}
+
+.header-right img {
+    width: 0.59rem;
+    height: 0.59rem;
+    position: absolute;
+}
+
+.banner-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 2.44rem;
+    color: #fff;
+    font-family: "三番";
+    font-weight: bold;
+    z-index: 999;
+}
+
+.banner-text p {
+    color: #fff;
+}
+
+.banner-text p:first-child {
+    font-size: 0.34rem;
+}
+
+.banner-text p:nth-child(2) {
+    font-size: 0.20rem;
+    letter-spacing: 0.02rem;
+}
+
+/*banner-bottom*/
+.banner-bottom {
+    width: 6.27rem;
+    height: 1.54rem;
+    background: #fff;
+    margin: -0.75rem auto;
+    position: relative;
+    z-index: 999;
+    border-radius: 0.1rem;
+    padding-left: 0.2rem;
+    overflow: hidden;
+}
+
+.dian-line {
+    /*width: 100%;*/
+    height: 0.04rem;
+    line-height: 0.04rem;
+    position: absolute;
+    top: -1.02rem;
+    color: #ccc;
+    z-index: -1;
+}
+
+.banner-bottom .title {
+    width: 100%;
+    height: 0.5rem;
+}
+
+.banner-bottom .title p {
+    margin-top: 0.1rem;
+    font-size: 0.34rem;
+    font-weight: bold;
+    color: #f51a36;
+    height: 0.42rem;
+    float: left;
+    font-family: "三番";
+}
+
+.banner-bottom .title p img {
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-left: 0.44rem;
+}
+
+.banner-bottom .title span {
+    color: #f51a36;
+    font-size: 0.2rem;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-bottom .title ul.wujiaoxing {
+    float: right;
+    /*width: 1.35rem;*/
+    height: 0.5rem;
+    padding-top: 0.28rem;
+    margin-right: 0.1rem;
+}
+
+.banner-bottom .title ul.wujiaoxing li {
+    width: 0.2rem;
+    height: 0.2rem;
+    float: left;
+    margin-right: 0.1rem;
+    background-image: url("../img/sy_wujiaoxing.png");
+    background-size: cover;
+}
+
+.banner-bottom > p {
+    width: 100%;
+    height: 0.4rem;
+    float: left;
+    color: #a7a7a7;
+    font-family: "苹方";
+    font-size: 0.26rem;
+    letter-spacing: 0.015rem;
+    font-weight: 400;
+    /*margin-top: -0.2rem;*/
+}
+
+.banner-bottom .info {
+    float: left;
+    width: 100%;
+    height: 0.65rem;
+
+}
+
+.banner-bottom .info .touxiang {
+    float: left;
+    width: 0.51rem;
+    height: 0.51rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.banner-bottom .info .touxiang img {
+    float: left;
+    width: 0.62rem;
+    height: 0.65rem;
+}
+
+.banner-bottom .info > p {
+    float: left;
+    color: #52575c;
+    font-family: "三番";
+    font-weight: bold;
+    font-size: 0.26rem;
+    text-transform: none;
+    margin-left: 0.12rem;
+    margin-top: 0.12rem;
+}
+
+.banner-bottom .info .address, .banner-bottom .info .time {
+    margin-left: 0.45rem;
+    margin-top: 0.12rem;
+    float: left;
+    /*width: 1.4rem;*/
+    height: 0.5rem;
+}
+
+.banner-bottom .info .jdms-top-time {
+    margin-left: 0.2rem;
+}
+
+.banner-bottom .info .address img, .banner-bottom .info .jdms-top-time img {
+    width: 0.32rem;
+    height: 0.32rem;
+    float: left;
+}
+
+.banner-bottom .info .address p, .banner-bottom .info .jdms-top-time p {
+    margin-left: 0.1rem;
+    float: left;
+    font-family: "三番";
+    font-size: 0.2rem;
+    color: #c2c2c2;
+}
+
+/*列表*/
+.liebiao {
+    margin-top: 1.16rem;
+    width: 100%;
+    height: 3.8rem;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.liebiao ul {
+    width: 130%;
+    height: 100%;
+    z-index: 999;
+
+}
+
+.liebiao ul li {
+    width: 3.1rem;
+    height: 100%;
+    margin-left: 0.13rem;
+    background: #fff;
+    float: left;
+    position: relative;
+}
+
+.liebiao ul li a .liebiao_top {
+    width: 100%;
+    height: 2.37rem;
+    position: relative;
+    background: red;
+    border-radius: 0.1rem;
+}
+
+.liebiao ul li a .liebiao_top .liebiao_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.1rem;
+}
+
+.liebiao ul li a .liebiao_top > .mark {
+    width: 100%;
+    height: 2.37rem;
+    background: url("../img/sy_mengban.png");
+    background-size: cover;
+    position: absolute;
+    opacity: 0.8;
+    border-radius: 0.1rem;
+}
+
+.liebiao ul li a .liebiao_top > img.zhaoxiangji {
+    width: 0.9rem;
+    height: 0.9rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0.8rem;
+    margin: auto;
+}
+
+.liebiao ul li a .liebiao_bottom {
+    width: 100%;
+    height: 1.4rem;
+    background: #fffefe;
+    padding-left: 0.16rem;
+    z-index: 999;
+    padding-top: 0.1rem;
+}
+
+.liebiao ul li a .liebiao_bottom .title_zimu {
+    text-transform: uppercase;
+    font-size: 0.36rem;
+    color: #5c5c5c;
+    font-family: "三番";
+    font-weight: bold;
+    list-style: none;
+    /*letter-spacing: -0.04rem;*/
+}
+
+.liebiao ul li a .liebiao_bottom p {
+    height: 0.34rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.liebiao ul li a .liebiao_bottom .title_zhongwen {
+    font-family: "苹方";
+    /*font-weight: bold;*/
+    color: #0a0a0a;
+    font-size: 0.24rem;
+}
+
+.liebiao ul li a .liebiao_bottom .title_zhongwen span {
+    color: #9ec2f8;
+}
+
+.liebiao ul li a .liebiao_bottom .wujiaoxing {
+    margin-top: 0.06rem;
+    width: 100%;
+    height: 0.2rem;
+}
+
+.liebiao ul li a .liebiao_bottom .wujiaoxing img {
+    width: 0.19rem;
+    height: 0.19rem;
+    float: left;
+}
+
+.liebiao ul li a .liebiao_bottom .title {
+    color: #448cf5;
+    font-size: 0.22rem;
+    letter-spacing: -0.02rem;
+}
+
+/*抢购*/
+.qianggou {
+    width: 100%;
+    height: 2.85rem;
+    margin-top: -0.95rem;
+    background: red;
+}
+
+.qianggou img.qianggouimg {
+    width: 100%;
+    height: 100%;
+}
+
+.qianggou img.qianggouzi {
+    width: 2.2rem;
+    height: 0.92rem;
+    float: left;
+    margin-top: -1.6rem;
+    margin-left: 0.36rem;
+    z-index: 999;
+    position: relative;
+}
+
+.qianggou .jdms-top-time {
+    width: 2.1rem;
+    height: 0.9rem;
+    float: left;
+    margin-top: -1.3rem;
+    margin-left: 5.18rem;
+    position: relative;
+}
+
+.qianggou .jdms-top-time .time-hour, .qianggou .jdms-top-time .time-minute, .qianggou .jdms-top-time .time-second {
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    background: #99d9f5;
+    /*opacity: 0.4;*/
+    font-size: 0.22rem;
+    font-weight: bold;
+    font-family: "三番";
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 0.05rem;
+    border: 0.02rem solid #fff;
+    color: #fff;
+}
+
+.qianggou .jdms-top-time .time-dian {
+    float: left;
+    width: 0.04rem;
+    height: 0.2rem;
+    margin: 0.18rem 0.12rem 0 0.08rem;
+    position: relative;
+}
+
+.qianggou .jdms-top-time .time-dian div {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+}
+
+.qianggou .jdms-top-time .time-dian .time-dian-top {
+    left: 0;
+    top: 0;
+}
+
+.qianggou .jdms-top-time .time-dian .time-dian-bottom {
+    left: 0;
+    bottom: 0;
+}
+
+/*猜你喜欢*/
+.caini {
+}
+
+.caini-title {
+    width: 100%;
+    height: 1.13rem;
+    padding-left: 0.28rem;
+    padding-top: 0.26rem;
+}
+
+.caini-title img {
+    width: 6.9rem;
+    height: 0.7rem;
+}
+
+.caini-con {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 0.24rem;
+    margin-bottom: 1rem;
+}
+
+.caini-con > li {
+    width: 3.36rem;
+    height: 3.36rem;
+    background: #fff;
+    float: left;
+    margin-bottom: 0.25rem;
+}
+
+.caini-con > li:nth-child(2n-1) {
+    margin-right: 0.3rem;
+}
+
+.caini-con > li > a > img.title_img {
+    width: 100%;
+    height: 1.9rem;
+}
+
+.caini-con > li > a .title_english {
+    font-size: 0.26rem;
+    color: #000000;
+    font-family: "三番";
+    padding-left: 0.14rem;
+}
+
+.caini-con > li > a .title_chinese {
+    font-size: 0.22rem;
+    color: #000000;
+    font-family: "苹方";
+    padding-left: 0.14rem;
+
+}
+
+.caini-con > li > a .touxiang {
+    float: left;
+    padding-left: 0.06rem;
+    width: 1.68rem;
+    height: 0.46rem;
+    overflow: hidden;
+    padding-top: 0.06rem;
+}
+
+.caini-con > li > a .touxiang li {
+    width: 0.33rem;
+    height: 0.33rem;
+    float: left;
+    background: #0044fd;
+    border: 0.03rem solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-left: -0.1rem;
+    box-shadow: 0.01rem 0.01rem 0.1rem 0.02rem rgba(0, 68, 253, 44);
+}
+
+.caini-con > li > a .touxiang li:nth-child(1) {
+    margin-left: 0;
+}
+
+.caini-con > li > a .touxiang li img {
+    width: 0.6rem;
+    height: 0.42rem;
+    position: absolute;
+    left: -50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.caini-con > li > a .touxiang li p {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-family: "三番";
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 0.22rem;
+}
+
+.caini-con > li > a .money {
+    width: 1.3rem;
+    height: 0.46rem;
+    float: right;
+    margin-right: 0.2rem;
+    position: relative;
+}
+
+.caini-con > li > a .money img {
+    width: 0.22rem;
+    height: 0.22rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.caini-con > li > a .money p {
+    font-size: 0.22rem;
+    color: #f63939;
+    font-family: "苹方";
+    position: absolute;
+    top: 0.08rem;
+    left: 0.26rem;
+    margin: auto;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer ul {
+    width: 100%;
+    height: 100%;
+}
+
+footer ul li {
+    padding-top: 0.2rem;
+    width: 1.49rem;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+footer ul li a {
+    width: 1.49rem;
+    height: 0.62rem;
+    border-right: 0.01rem solid #e0e0e0;
+    float: left;
+}
+
+footer ul li a img {
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+    right: 0;
+    margin: auto;
+}
+
+footer ul li a span {
+    font-family: "苹方";
+    font-size: 0.18rem;
+    color: #000;
+    position: absolute;
+    left: 33%;
+    bottom: 0;
+    margin: auto;
+}
+
+footer ul li:nth-child(3) img {
+    width: 1.01rem;
+    height: 0.94rem;
+    position: absolute;
+    left: 0;
+    top: -0.16rem;
+    right: 0;
+    margin: auto;
+}

@@ -14,4 +14,10 @@ class index extends indexMain {
         $obj->outPut();
         $this->session->set("code",$obj->current);
     }
+    function fenlei(){
+        $this->smarty->display("xiangqing.html");
+    }
+    function xiangqing(){
+        $this->smarty->display("xiangqing.html");
+    }
 }

@@ -1,0 +1,380 @@
+
+body{
+    font-family: "San Francisco Display";
+    background: #f7f7f7;
+    overflow-x: hidden;
+}
+.xk-head{
+    width: 100%;
+    height: 4.1rem;
+    background: url("{IMG_PATH}/xk-1image.png");
+    background-size: 102%;
+    position: relative;
+}
+.xk-firstline{
+    height: 0.46rem;
+    width: 100%;
+    position: absolute;
+    top:0.24rem;
+}
+.exit{
+    width: 0.46rem;
+    height: 0.46rem;
+    position: absolute;
+    left: 0.24rem;
+    background: url("../img/xk-exit.png");
+    background-size: 100%;
+}
+.share{
+    width: 0.46rem;
+    height: 0.46rem;
+    position: absolute;
+    right: 0.24rem;
+    background: url("../img/xk-share.png") center center no-repeat;
+    background-size: 100%;
+}
+.xk-fl-zuo{
+    position: absolute;
+    width: 0.8rem;
+    height: 100%;
+    background: url("../img/xk-zuo.png");
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat:no-repeat;
+    left: 2.4rem;
+}
+.xk-fl-you{
+    position: absolute;
+    width: 0.8rem;
+    height: 100%;
+    background: url("../img/xk-you.png");
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat:no-repeat;
+    right: 2.4rem;
+}
+.fl-wenzi{
+    color: #fff;
+    font-size: 0.26rem;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    text-align: center;
+    line-height: 0.46rem;
+    margin: auto;
+}
+.xk-tl{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 0.8rem;
+    font-size: 0.26rem;
+    color:#fff;
+}
+.xk-threel{
+    width:3.2rem;
+    color: #fff;
+    position: absolute;
+    top:1.9rem;
+    left:0.28rem;
+}
+.xk-thr1{
+    font-size: 0.2rem;
+    font-weight: bold;
+}
+.xk-thr2{
+    font-size: 0.14rem;
+    font-weight: bold;
+}
+.xk-thr3{
+    font-size: 0.2rem;
+}
+.xk-thr4{
+    height: 0.2rem;
+    line-height: 0.2rem;
+}
+.xk-thr4>span{
+    font-weight: 900;
+}
+.xk-title{
+    width: 6.6rem;
+    height: 1.3rem;
+    position: absolute;
+    z-index: 1000;
+    top:3.4rem;
+    left: 0;
+    right:0;
+    margin:auto;
+    background: url("../img/xk-bg1.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+.xk-timg{
+    position: absolute;
+    top:0.3rem;
+    left:0.15rem;
+    width: 0.72rem;
+    height: 0.72rem;
+}
+.xk-timg>img{
+    width: 100%;
+    height: 100%;
+}
+.xk-t-wz{
+    position: absolute;
+    top:0.2rem;
+    left: 1.05rem;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+}
+.black-wz{
+    color: #000;
+}
+.ddd-wz{
+    color: #81868b;
+}
+.ccc-wz{
+    font-size: 0.18rem;
+    color: #cdcece;
+    position: absolute;
+}
+.from{
+    width: 1.4rem;
+    height: 0.25rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url("../img/xk-dingwei.png") left center no-repeat;
+    background-size: auto 100% ;
+    padding-left: 0.3rem;
+}
+.to{
+    width: 1.4rem;
+    height: 0.25rem;
+    position: absolute;
+    top:0;
+    left: 1.6rem;
+    background: url("../img/xk-dingwei.png") left center no-repeat;
+    background-size: auto 100% ;
+    padding-left: 0.3rem;
+}
+.caidan{
+    width: 1.4rem;
+    height: 0.25rem;
+    position: absolute;
+    top:0;
+    left: 3.3rem;
+    background: url("../img/xk-siyecao.png") left center no-repeat;
+    background-size: auto 100% ;
+    padding-left: 0.3rem;
+}
+.xk-message{
+    width:100%;
+    height: 5.1rem;
+    background: #f7f7f7;
+    position: relative;
+    padding-top: 1rem;
+    padding-left: 0.35rem;
+}
+.xk-m-title{
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+.m-message{
+    font-size: 0.18rem;
+    position: absolute;
+    left:0.35rem;
+    top:1.45rem;
+    color: #bdbdbd;
+}
+.like{
+    width: 2rem;
+    height: 0.25rem;
+    position: absolute;
+    line-height: 0.2rem;
+    top:0;
+    left: 0;
+    background: url("../img/xk-see.png") left center no-repeat;
+    background-size: auto 100% ;
+    padding-left: 0.3rem;
+}
+.sale{
+    width: 2rem;
+    height: 0.25rem;
+    position: absolute;
+    line-height: 0.2rem;
+    top:0;
+    left: 2.2rem;
+    background: url("../img/xk-icon.png") left center no-repeat;
+    background-size: auto 100% ;
+    padding-left: 0.3rem;
+}
+.rmb{
+    width: 2rem;
+    height: 0.25rem;
+    position: absolute;
+    line-height: 0.2rem;
+    top:0;
+    left: 3.8rem;
+    background: url("../img/xk-rmb.png") left center no-repeat;
+    background-size:auto 60% ;
+    padding-left: 0.4rem;
+}
+.m-content{
+    width: 100%;
+    font-size: 0.18rem;
+    position: absolute;
+    left:0.35rem;
+    top:1.8rem;
+    color: #858687;
+}
+div.neirong{
+    height: 0.75rem;
+    width: 100%;
+    position: relative;
+}
+.name{
+    color: #000;
+}
+.englishname{
+    position: absolute;
+    top:0.25rem;font-size: 0.16rem;
+}
+.shuju{
+    position: absolute;
+    top:0;
+    left:1.85rem;
+    color: #000;
+}
+.notice{
+    width: 100%;
+    height: 1rem;
+    background: white;
+    padding-left: 0.45rem;
+    padding-right: 0.25rem;
+    padding-top: 0.2rem;
+    box-shadow: 0.03rem 0.02rem 0.15rem 0.03rem rgba(0,0,0,0.2);
+}
+.noticeimg{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url("../img/xk-notice.png") ;
+    background-size: 100%;
+    float: left;
+}
+.n-con{
+    font-size: 0.2rem;
+    line-height: 0.34rem;
+    color: #ff2525;
+}
+.xk-details{
+    width: 100%;
+    margin-top: 0.45rem;
+}
+.buttons{
+    width: 90%;
+    height: 0.68rem;
+    margin:0 auto;
+}
+.button1{
+    width: 1.9rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin:auto 10% ;
+    border-radius: 0.5rem;
+}
+.button1>span.hanzi{
+    font-size: 0.2rem;
+    text-align: center;
+}
+.button1>span.eng{
+    position: absolute;
+    font-size: 0.18rem;
+    text-align: center;
+    top:0.3rem;
+    left:0;
+    right:0;
+    margin:auto;
+    color: #858687;
+}
+.xk-details .buttons .button{
+    background: url("../img/xk-button.png") center center no-repeat;
+    background-size: contain;
+    color: white;
+    box-shadow: 0.01rem 0.01rem 0.1rem 0.02rem rgba(0,0,0,0.2);
+}
+.button>span.eng{
+    color: white;
+}
+.details-content{
+    width: 90%;
+    height: auto;
+    margin:0.2rem auto;
+}
+.details-con-title{
+    width: 5.4rem;
+    height: 1.2rem;
+    margin:0 auto;
+    position: relative;
+}
+.details-con-title>img{
+    width: 103%;
+    height: 100%;
+}
+.details-con-title>.chi{
+    position: absolute;
+    top:0.3rem;
+    left:0;
+    right: 0;
+    margin:auto;
+    text-align: center;
+    font-size: 0.3rem;
+}
+.details-con-title>.enli{
+    position: absolute;
+    top:0.7rem;
+    left:0;
+    right: 0;
+    margin:auto;
+    text-align: center;
+    font-size: 0.2rem;
+    color:#858687;
+}
+div.concon{
+    width: 100%;
+    height: 3rem;
+}
+footer{
+    width: 100%;
+    height: 1.1rem;
+    background: white;
+    position: fixed;
+    bottom:0;
+}
+.foot-button{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    line-height: 1.1rem;
+    text-align: center;
+    color: #5a6bf9;
+    font-size: 0.24rem;
+    position: relative;
+}
+.foot-button>img{
+    width: 0.54rem;
+    height: 0.54rem;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0.2rem;
+    margin: auto;
+}
+.choose{
+    color: white;
+    background: #5a6bf9;
+}
