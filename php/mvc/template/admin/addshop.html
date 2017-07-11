@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
+    <script src="{JS_PATH}/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{URL_PATH}/static/editor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{URL_PATH}/static/editor/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="{URL_PATH}/static/editor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{JS_PATH}/upload.js"></script>
+
+    <style>
+        td{
+            text-align: center;
+        }
+        input{
+            width:100%;
+            height:100%;
+            background:none;
+            outline:none;
+            border: 0;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<form action="index.php?m=admin&f=shop&a=zaddshop" method="post">
+
+    <table class="table table-bordered ">
+        <tr>
+            <td>title</td>
+            <td>cid</td>
+            <td>keyword</td>
+            <td>alltime</td>
+            <td>discount</td>
+            <td>price</td>
+            <td>start</td>
+            <td>end</td>
+            <td>starttime</td>
+            <td>traffic</td>
+            <td>xingji</td>
+            <td>posid</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="title"></td>
+            <td>  <select name="cid" id="ss" >
+                <option value="0"  selected>一级分类</option>
+            </select></td>
+
+            <td><input type="text" name="keyword"></td>
+            <td><input type="text" name="alltime"></td>
+            <td><input type="text" name="discount"></td>
+            <td><input type="text" name="price"></td>
+            <td><input type="text" name="start"></td>
+            <td><input type="text" name="end"></td>
+            <td><input type="text" name="starttime"></td>
+            <td><input type="text" name="traffic"></td>
+            <td><input type="text" name="xingji"></td>
+            <td>
+                <select name="posid" id="" >
+                    {foreach $res as $s}
+                <option value={$s["posid"]} >{$s["posname"]}</option>
+                {/foreach}
+            </select></td>
+        </tr>
+
+    </table>
+    内容:  <script id="editor" type="text/plain" style="width:500px;height:300px;" name="routedefall"></script>
+    <input type="hidden" name="imgurl">
+    <div class="uploadbox"></div>
+
+    <input type="submit" value="提交">
+</form>
+</body>
+<script>
+    var obj = new upload();
+    obj.size = 1024 * 1024 * 8.6;
+    obj.selectBtnStyle.background = "red";
+    obj.createView({
+        parent: document.querySelector(".uploadbox")
+    });
+    obj.up("index.php?m=admin&f=shop&a=up",function(data){
+        document.querySelector("input[name=imgurl]").value=data;
+    });
+    var arr=[];
+    {foreach $re as $v}
+    arr.push({
+        id:{$v["id"]},
+        name:'{$v["name"]}',
+        pid:{$v["pid"]}
+
+    });
+    {/foreach}
+    var a=0;
+    var arrr=[];
+    function getTree(pid,a){
+        a++;
+        arr.forEach(function(e,i){
+//            console.log(e["pid"]);
+            if(e["pid"]==pid){
+
+                e["a"]=a;
+                cid=e["id"];
+                arrr.push(e);
+                getTree(cid,a);
+            }
+
+        })
+    }
+    getTree(0,0);
+
+
+    arrr.forEach(function(e,i){
+        var L="";
+        for (var i=0;i<e["a"];i++){
+            L+="L";
+        }
+        var a='<option value='+e['id']+'>'+L+e['name']+'</option>';
+        $("#ss").append(a);
+
+    })
+    var ue = UE.getEditor('editor');
+//    var obj = new upload();
+//    obj.size = 1024 * 1024 * 8.6;
+//    obj.selectBtnStyle.background = "red";
+//    obj.createView({
+//        parent: document.querySelector(".uploadbox")
+//    });
+//    obj.up("upload.php",function(data){
+//        document.querySelector("input[name=imgurl]").value=data;
+//    });
+</script>
+</html>
