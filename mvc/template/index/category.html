@@ -6,16 +6,17 @@
     <title></title>
     <link rel="stylesheet" href="{CSS_PATH}/basic.css" />
     <script type="text/javascript" src="{JS_PATH}/rem.js"></script>
+    <script type="text/javascript" src="{JS_PATH}/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="{CSS_PATH}/c-main.css"/>
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_tgrlk8guf7833di.css" />
-    <script type="text/javascript">
-    	
-   		document.addEventListener('plusready', function(){
-   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-   		
-   		});
-   	
-    </script>
+
+	<script type="text/javascript">
+		$(function () {
+			$(".back").click(function () {
+				history.back();
+			})
+		})
+	</script>
 </head>
 <body>
 	<header>
@@ -64,48 +65,15 @@
 			<ul class="nr">
 				{foreach $result as $v}
 				<li>
+					<a href="index.php?m=index&f=lists&cid={$v['id']}">
 					<div class="tu"></div>
 					<div class="tit">
 						<div class="hanyu">{$v["name"]}</div>
 						<div class="yingyu">{$v["Ename"]}</div>
 					</div>
+					</a>
 				</li>
 				{/foreach}
-				<!--<li>-->
-					<!--<div class="tu"></div>-->
-					<!--<div class="tit">-->
-						<!--<div class="hanyu">跟团游</div>-->
-						<!--<div class="yingyu">GENTUAN</div>-->
-					<!--</div>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<div class="tu"></div>-->
-					<!--<div class="tit">-->
-						<!--<div class="hanyu">主题乐园</div>-->
-						<!--<div class="yingyu">ZHUTILE</div>-->
-					<!--</div>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<div class="tu"></div>-->
-					<!--<div class="tit">-->
-						<!--<div class="hanyu">旅游攻略</div>-->
-						<!--<div class="yingyu">LVYOU</div>-->
-					<!--</div>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<div class="tu"></div>-->
-					<!--<div class="tit">-->
-						<!--<div class="hanyu">景区介绍</div>-->
-						<!--<div class="yingyu">JINGQUJIE</div>-->
-					<!--</div>-->
-				<!--</li>-->
-				<!--<li>-->
-					<!--<div class="tu"></div>-->
-					<!--<div class="tit">-->
-						<!--<div class="hanyu">超值优惠</div>-->
-						<!--<div class="yingyu">CHAOZHI</div>-->
-					<!--</div>-->
-				<!--</li>-->
 			</ul>
 			<div class="yjx"></div>
 			<div class="yjx1"></div>

@@ -31,8 +31,25 @@ class index extends indexMain
         $this->smarty->display("xiangqing.html");
     }
 
-    function sy_select()
-    {
+    function login(){
+        $this->smarty->display("login.html");
+    }
+    function logins(){
+        $login=$this->session->get("indexLogin");
 
+        $uid=$this->session->get("uid");
+
+        $uname=$this->session->get("uname");
+        $this->smarty->assign("userlogin",$login);
+        $this->smarty->assign("uid",$uid);
+        $this->smarty->assign("uname",$uname);
+        $this->smarty->display("logins.html");
+    }
+    function loginss(){
+        $name=$_POST["name"];
+        echo $name;
+    }
+    function register(){
+        $this->smarty->display("register.html");
     }
 }

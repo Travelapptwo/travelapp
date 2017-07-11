@@ -114,6 +114,7 @@ class db{
             $this->opts["val"]=substr($val,0,-1);
         }
         $sql="insert into ".$this->table." (".$this->opts["field"].") values (".$this->opts["val"].")";
+       // return $sql;
         $this->db->query($sql);
         return $this->db->affected_rows;
     }

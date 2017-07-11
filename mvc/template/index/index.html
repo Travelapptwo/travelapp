@@ -88,7 +88,7 @@
     <ul>
         {foreach $result as $v}
         <li>
-            <a href="##">
+            <a href="index.php?m=index&f=category&pid={$v['id']}">
                 <!--<div class="xingji">{$v['xingji']}</div>-->
                 <input type="hidden" value="{$v['xingji']}">
                 <div class="liebiao_top">
@@ -98,14 +98,14 @@
                 </div>
 
                 <div class="liebiao_bottom">
-                    <p class="title_zimu">{$v["englishname"]}</p>
+                    <p class="title_zimu">{$v["Ename"]}</p>
                     <p class="title_zhongwen">{$v["name"]}</p>
                     <div class="wujiaoxing">
                         {for $i=1 to $v['xingji']}
                         <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
                         {/for}
                     </div>
-                    <p class="title">{$v["englishname"]}B.ANKUAI</p>
+                    <p class="title">{$v["Ename"]}B.ANKUAI</p>
                 </div>
             </a>
         </li>

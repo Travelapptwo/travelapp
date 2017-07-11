@@ -1,0 +1,453 @@
+*{
+	font-family: sans-serif;
+}
+header{
+	height: 3.16rem;
+	width: 100%;
+	background: url(../img/c-header01.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.mb{
+	width: 100%;height: 100%;
+	background: rgba(6,32,220,0.3);
+	border-bottom: 0.04rem solid #1032e1;
+	position: absolute;
+	right: 0;top: 0;
+}
+.back{
+	width: 0.46rem;height: 0.46rem;
+	border-radius: 50%;background: rgba(6,32,220,0.4);
+	border: 0.04rem solid #fff;
+	position: absolute;
+	top: 0.66rem;left: 0.24rem;
+}
+.back i{
+	color: #FFFFFF;
+	position: absolute;
+	top: 0.08rem;left: 0.06rem;
+	font-size: 0.16rem;
+}
+.title{
+	color: white;
+	font-size: 0.38rem;
+	position: absolute;
+	top: 1.38rem;
+	left: 0.24rem;
+}
+.fgxian{
+	width: 0.62rem;
+	height: 0.02rem;
+	background: #3d6fff;
+	border-left:0.04rem solid #FFFFFF;
+	border-right:0.04rem solid #FFFFFF;
+	position: absolute;
+	top: 1.9rem;
+	left: 0.24rem;
+}
+.zixun{
+	position: absolute;
+	top: 2rem;
+	left: 0.24rem;
+}
+.zxsx{
+	color: white;
+	font-size: 0.24rem;
+	display: block;
+	float: left;
+}
+.zixun .yuan{
+	width: 0.05rem;
+	height: 0.05rem;
+	background: white;
+	float: left;
+	margin-left:0.05rem ;
+	margin-top: 0.15rem;
+}
+.zixun .yuan:nth-child(3){
+	background: rgba(255,255,255,0.6);
+}
+.zixun .yuan:nth-child(4){
+	background: rgba(255,255,255,0.2);
+}
+.sousuo{
+	height: 0.5rem;
+	width: 6.98rem;
+	border-radius: 0.3rem;
+	border: 0.02rem solid #2c5ff1;
+	background: #2855d5;
+	position: absolute;
+	top: 2.5rem;
+	left: 0.24rem;
+}
+.sousuo .ssyuan{
+	width: 0.06rem;
+	height: 0.06rem;
+	margin-left: 0.06rem;
+	margin-top: 0.2rem;
+	background: #1cc3bf;
+	box-shadow: 0.05rem 0.1rem 0.21rem 0.01rem;
+	float: left;
+	border-radius: 50%;
+}
+
+.sousuo .ssyuan:nth-child(2){
+	background: white;
+}
+.sousuo .kuang{
+	width: 70%;
+	height: 100%;
+	border: none;
+	border-radius: 0.3rem;
+	float: left;
+	margin-left: 0.2rem;
+	background: #2855d5;
+	color: #ccc;
+	outline: none;
+}
+.sousuo .zi{
+	color: #537ffc;
+	font-size: 0.24rem;
+	position: absolute;
+	top: 0.08rem;
+	left: 0.5rem;
+}
+.y01{
+	position: absolute;
+	right: 0;
+}
+.y1{
+	width: 0.08rem;
+	height: 0.08rem;
+	float: left;
+	border-radius: 50%;
+	background: white;
+	margin-top: 0.19rem;
+	margin-right: 0.06rem;
+}
+.y2{
+	width: 0.06rem;
+	height: 0.06rem;
+	float: left;
+	border-radius: 50%;
+	background: white;
+	margin-top: 0.19rem;
+	margin-right: 0.08rem;
+}
+.y3{
+	width: 0.04rem;
+	height: 0.04rem;
+	float: left;
+	border-radius: 50%;
+	background: white;
+	margin-top: 0.2rem;
+	margin-right: 0.15rem;
+}
+.sousuo i{
+	position: absolute;
+	color: white;
+	top: 0.1rem;
+	right: 0.5rem;
+}
+.y02{
+	position: absolute;
+	right: 0.9rem;
+}
+.m-header{
+	height: 1.18rem;
+	width: 100%;
+	padding: 0.3rem 0.33rem;
+	position: relative;
+}
+.m-header .zbywt{
+    background:-webkit-linear-gradient(left,#2763e2,#276be2 25%,#2779e2 40%,#2796e2 55%,#27bce2 70%,#27bce2);
+    -webkit-background-clip:text;/*只有webkit内核支持text的剪切模式*/
+    font-size: 0.3rem;
+    color:transparent;
+    font-weight: bold;
+    letter-spacing:0.05rem;
+}
+.m-header .zbhyt{
+	 background:-webkit-linear-gradient(left top,#276be2,#fff);
+    -webkit-background-clip:text;/*只有webkit内核支持text的剪切模式*/
+    font-size: 0.3rem;
+    color:transparent;
+    font-weight: bold;
+    letter-spacing:0.05rem;
+    background:-webkit-linear-gradient();
+}
+.yuanj{
+	width: 25%;
+   height: 0.5rem;
+	background: url(../img/c-yuanjiao.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0.3rem;
+	bottom: 0;
+}
+.con{
+	padding: 0 0.46rem;
+	position: relative;
+}
+.nr{
+	position: relative;
+	overflow:hidden;
+}
+.nr li{
+	width: 1.76rem;
+	height: 2.08rem;
+	border-radius: 0.1rem;
+	box-shadow:0rem 0rem 0.3rem 0.03rem #bbb;;
+	float: left;
+	margin-left: 0.4rem;
+	margin-bottom: 0.4rem;
+	z-index: 10;
+	margin-top: 0.1rem;
+	position: relative;
+	padding: 0.27rem 0.2rem 0.2rem 0.2rem;
+}
+.nr li:nth-child(1){
+	margin-left: 0.2rem;
+}
+.nr li:nth-child(4){
+	margin-left: 0.2rem;
+}
+.yuanjiao{
+	background:url(../img/c-yuanjiao02.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 25%;
+    height: 0.5rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 0;
+	
+}
+.nr li .tu{
+	width: 90%;
+	height: 60%;
+	background: url(../img/c-zhoubian.jpg);
+	background-size: 110%  110%;
+	
+}
+.nr li .hanyu{
+	font-size: 0.24rem;
+	text-align: center;
+}
+.nr li .yingyu{
+	font-size: 0.24rem;
+	text-align: center;
+	letter-spacing: 0.03rem;
+}
+.yjx{
+	background: url(../img/c-yuanjiao04.png);
+	background-size: 100%  100%;
+	background-repeat: no-repeat;
+	width: 0.4rem;
+	height: 0.2rem;
+	position: absolute;
+	top: 1.8rem;
+	left: 2.7rem;
+}
+.yjx1{
+	background: url(../img/c-yuanjiao04.png);
+	background-size: 100%  100%;
+	background-repeat: no-repeat;
+	width: 0.6rem;
+	height: 0.2rem;
+	position: absolute;
+	top: 2.35rem;
+	right: 0.6rem;
+}
+.yjx2{
+	background: url(../img/c-yuanjiao03.png);
+	background-size: 100%  100%;
+	background-repeat: no-repeat;
+	width: 20%;
+    height: 0.5rem;
+	position: absolute;
+	top: 4.6rem;
+	left: 0.1rem;
+}
+.yjx3{
+	background: url(../img/c-yuanjiao04.png);
+	background-size: 100%  100%;
+	background-repeat: no-repeat;
+	width: 0.6rem;
+	height: 0.2rem;
+	position: absolute;
+	bottom: 0rem;
+	right: 0.6rem;
+}
+.tuijian-con{
+	padding: 0 0.48rem;
+}
+.tuijiannr .remen{
+	width: 6.5rem;
+	height: 2.15rem;
+	box-shadow: 0rem 0rem 0.3rem 0.03rem #bbb;
+	border-radius: 0.1rem;
+	margin-bottom: 0.3rem;
+	padding: 0.15rem;
+}
+.tuijiannr .remen:nth-child(1){
+	margin-top: 0.2rem;
+}
+.tuijiannr .remen:nth-child(4){
+	margin-bottom: 0.5rem;
+}
+.left-tu{
+	width: 2.03rem;
+	height: 1.83rem;
+
+	/*background: url(../img/c-tuijiantu.jpg);*/
+	/*background-size: 100%  100%;*/
+	/*background-repeat: no-repeat;*/
+	float: left;
+}
+.left-tu>img{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.1rem;
+}
+.right-box{
+	float: left;
+	padding-left: 0.15rem;
+}
+.right-title{
+	font-size: 0.26rem;
+	color: #6f757a;
+	font-weight: 800;
+}
+.right-title1{
+	font-size: 0.26rem;
+	color: #959697;
+	font-weight: 800;
+}
+.xing{
+	position: absolute;
+	padding: 0.1rem 0.6rem 0;
+	left:0;
+	top:0;
+}
+.right-title2{
+	position: relative;
+	line-height: 0.4rem;
+	font-size: 0.20rem;
+	color: #ddd;
+	font-weight: 400;
+	text-align: left;
+}
+.xing li{
+	float: left;
+	background: url(../img/c-xing.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 0.23rem;
+	height: 0.23rem;
+}
+.first{
+	margin-top: 0.1rem;
+	position: relative;
+}
+.shop{
+	float: left;
+	font-size: 0.22rem;
+	color: #c1c2c2;
+	padding-left: 0.5rem;
+	padding-top: 0.05rem;
+}
+.shouzi{
+	width: 0.25rem;
+	height: 0.25rem;
+	background: #24a5f7;
+	border-radius: 50%;
+	color: white;
+	font-size: 0.12rem;
+	text-align: center;
+	line-height: 0.25rem;
+	/*position: relative;*/
+}
+.shouzi span{
+	
+	display: inline-block;
+}
+.xinyh{
+	font-size: 0.22rem;
+	color: #d9dada;
+	/*float: left;*/
+	position: absolute;
+	top: -0.05rem;
+	left: 0.3rem;
+}
+.qian{
+	padding-top:0.1rem ;
+	font-size: 0.22rem;
+}
+.rmb{
+	width: 0.25rem;
+	height: 0.25rem;
+	background: #24a5f7;
+	border-radius: 50%;
+	font-size: 0.16rem;
+	text-align: center;
+	line-height: 0.25rem;
+	color: white;
+	float: left;
+}
+.yiqianliu{
+	color: #dddede;
+	padding-left: 0.05rem;
+	float: left;
+}
+.qian .dizhi{
+	width: 0.25rem;
+	height: 0.25rem;
+	background: #24a5f7;
+	border-radius: 50%;
+	font-size: 0.12rem;
+	text-align: center;
+	line-height: 0.3rem;
+	color: white;
+	float: left;
+	margin-left: 0.1rem;
+}
+.where{
+	color: #dddede;
+	padding-left: 0.05rem;
+	float: left;
+}
+.touxiang{
+	float: left;
+	margin-left: 0.1rem;
+	position: relative;
+	
+}
+.touxiang li{
+	width: 0.25rem;
+	height: 0.25rem;
+	border-radius: 50%;
+	background: red;
+	border: 0.02rem solid #fff;
+	float: left;
+	
+}
+.touxiang li:nth-child(1){
+	position: absolute;
+	top: 0.05rem;left: 0;
+}
+.touxiang li:nth-child(2){
+	position: absolute;
+	top: 0.05rem;left: 0.16rem;
+}
+.touxiang li:nth-child(3){
+	position: absolute;
+	top: 0.05rem;left: 0.32rem;
+}
+.num{
+	color: #dddede;
+	padding-left: 0.05rem;
+	float: right;
+}

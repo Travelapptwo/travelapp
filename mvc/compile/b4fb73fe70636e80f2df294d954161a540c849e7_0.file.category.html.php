@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 05:59:19
+/* Smarty version 3.1.30, created on 2017-07-11 08:58:19
   from "F:\wamp\www\travelapp\mvc\template\index\category.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962fb97959042_34505164',
+  'unifunc' => 'content_5964770bb2b042_30309081',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b4fb73fe70636e80f2df294d954161a540c849e7' => 
     array (
       0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\index\\category.html',
-      1 => 1499659158,
+      1 => 1499756095,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962fb97959042_34505164 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5964770bb2b042_30309081 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,18 +34,22 @@ function content_5962fb97959042_34505164 (Smarty_Internal_Template $_smarty_tpl)
  type="text/javascript" src="<?php echo JS_PATH;?>
 /rem.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo JS_PATH;?>
+/jquery.js"><?php echo '</script'; ?>
+>
     <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH;?>
 /c-main.css"/>
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_tgrlk8guf7833di.css" />
-    <?php echo '<script'; ?>
+
+	<?php echo '<script'; ?>
  type="text/javascript">
-    	
-   		document.addEventListener('plusready', function(){
-   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-   		
-   		});
-   	
-    <?php echo '</script'; ?>
+		$(function () {
+			$(".back").click(function () {
+				history.back();
+			})
+		})
+	<?php echo '</script'; ?>
 >
 </head>
 <body>
@@ -93,48 +97,29 @@ function content_5962fb97959042_34505164 (Smarty_Internal_Template $_smarty_tpl)
 		<div class="con">
 			<!--<div class="yuanjiao"></div>-->
 			<ul class="nr">
+				<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
 				<li>
+					<a href="index.php?m=index&f=lists&cid=<?php echo $_smarty_tpl->tpl_vars['v']->value['id'];?>
+">
 					<div class="tu"></div>
 					<div class="tit">
-						<div class="hanyu">自驾游</div>
-						<div class="yingyu">ZIJIAYOU</div>
+						<div class="hanyu"><?php echo $_smarty_tpl->tpl_vars['v']->value["name"];?>
+</div>
+						<div class="yingyu"><?php echo $_smarty_tpl->tpl_vars['v']->value["Ename"];?>
+</div>
 					</div>
+					</a>
 				</li>
-				<li>
-					<div class="tu"></div>
-					<div class="tit">
-						<div class="hanyu">跟团游</div>
-						<div class="yingyu">GENTUAN</div>
-					</div>
-				</li>
-				<li>
-					<div class="tu"></div>
-					<div class="tit">
-						<div class="hanyu">主题乐园</div>
-						<div class="yingyu">ZHUTILE</div>
-					</div>
-				</li>
-				<li>
-					<div class="tu"></div>
-					<div class="tit">
-						<div class="hanyu">旅游攻略</div>
-						<div class="yingyu">LVYOU</div>
-					</div>
-				</li>
-				<li>
-					<div class="tu"></div>
-					<div class="tit">
-						<div class="hanyu">景区介绍</div>
-						<div class="yingyu">JINGQUJIE</div>
-					</div>
-				</li>
-				<li>
-					<div class="tu"></div>
-					<div class="tit">
-						<div class="hanyu">超值优惠</div>
-						<div class="yingyu">CHAOZHI</div>
-					</div>
-				</li>
+				<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
 			</ul>
 			<div class="yjx"></div>
 			<div class="yjx1"></div>

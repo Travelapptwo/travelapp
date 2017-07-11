@@ -1,0 +1,47 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 5.4rem;
+    height: 1rem;
+    background: #3B3738;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.01rem solid #3080E6;
+    font-size: 0.2rem;
+
+    padding: 0.1rem;
+}
+
+.dl {
+    color: #FFFFFF;
+    width: 45%;
+    display: inline-block;
+    height: 0.8rem;
+    text-align: center;
+    line-height: 0.3rem;
+    background: #3284ED;
+    padding: 0.1rem;
+    border-radius: 0.8rem;
+}
+
+.zc {
+    color: #FFFFFF;
+    width: 45%;
+    display: inline-block;
+    float: right;
+    height: 0.8rem;
+    text-align: center;
+    line-height: 0.3rem;
+    background: #3284ED;
+    padding: 0.1rem;
+    border-radius: 0.8rem;
+}
+
+

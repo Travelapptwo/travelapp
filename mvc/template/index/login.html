@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link rel="stylesheet" href="{CSS_PATH}/basic.css">
+    <link rel="stylesheet" href="{CSS_PATH}/login.css">
+    <script src="{JS_PATH}/rem.js"></script>
+    <script src="{JS_PATH}/jquery.js"></script>
+    <style>
+
+        .bigbox {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: fixed;
+            background-image: url("{IMG_PATH}/dlbeijing.png");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+{if $userlogin}
+<script>
+    alert("您已登录");location.href="index.php"
+</script>
+{else}
+<body>
+<div class="bigbox">
+    <div class="box">
+        <a href="index.php?f=index&a=logins">
+            <div class="dl">
+                <p>登陆</p>
+                <p>DENGLU</p>
+            </div>
+        </a>
+        <a href="index.php?f=index&a=register">
+            <div class="zc">
+                <p>注册</p>
+                <p>REGISTER</p>
+            </div>
+        </a>
+    </div>
+</div>
+</body>
+{/if}
+</html>
