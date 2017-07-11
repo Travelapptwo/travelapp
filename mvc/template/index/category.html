@@ -57,7 +57,7 @@
 	<main>
 		<div class="m-header">
 			<div class="zbywt">ZHOUBIANYOU</div>
-			<div class="zbhyt">周边分类</div>
+			<div class="zbhyt">{$categoryname[0]["name"]}分类</div>
 			<div class="yuanj"></div>
 		</div>
 		<div class="con">
@@ -65,7 +65,7 @@
 			<ul class="nr">
 				{foreach $result as $v}
 				<li>
-					<a href="index.php?m=index&f=lists&cid={$v['id']}">
+					<a href="index.php?m=index&f=lists&cid={$v['id']}" style="color: #999;">
 					<div class="tu"></div>
 					<div class="tit">
 						<div class="hanyu">{$v["name"]}</div>

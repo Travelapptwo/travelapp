@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 08:58:19
+/* Smarty version 3.1.30, created on 2017-07-11 09:24:24
   from "F:\wamp\www\travelapp\mvc\template\index\category.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5964770bb2b042_30309081',
+  'unifunc' => 'content_59647d280e8fe0_01445917',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b4fb73fe70636e80f2df294d954161a540c849e7' => 
     array (
       0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\index\\category.html',
-      1 => 1499756095,
+      1 => 1499757859,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5964770bb2b042_30309081 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59647d280e8fe0_01445917 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -91,7 +91,8 @@ function content_5964770bb2b042_30309081 (Smarty_Internal_Template $_smarty_tpl)
 	<main>
 		<div class="m-header">
 			<div class="zbywt">ZHOUBIANYOU</div>
-			<div class="zbhyt">周边分类</div>
+			<div class="zbhyt"><?php echo $_smarty_tpl->tpl_vars['categoryname']->value[0]["name"];?>
+分类</div>
 			<div class="yuanj"></div>
 		</div>
 		<div class="con">
@@ -104,7 +105,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
 				<li>
 					<a href="index.php?m=index&f=lists&cid=<?php echo $_smarty_tpl->tpl_vars['v']->value['id'];?>
-">
+" style="color: #999;">
 					<div class="tu"></div>
 					<div class="tit">
 						<div class="hanyu"><?php echo $_smarty_tpl->tpl_vars['v']->value["name"];?>
