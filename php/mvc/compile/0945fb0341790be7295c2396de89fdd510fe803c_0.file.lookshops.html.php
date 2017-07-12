@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 12:26:00
+/* Smarty version 3.1.30, created on 2017-07-12 05:22:57
   from "E:\sahd\wamp\www\php\mvc\template\admin\lookshops.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5964a7b848e5c0_35479507',
+  'unifunc' => 'content_59659611cd2e54_54223115',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0945fb0341790be7295c2396de89fdd510fe803c' => 
     array (
       0 => 'E:\\sahd\\wamp\\www\\php\\mvc\\template\\admin\\lookshops.html',
-      1 => 1499768682,
+      1 => 1499829774,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5964a7b848e5c0_35479507 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59659611cd2e54_54223115 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 </html><!DOCTYPE html>
@@ -52,7 +52,7 @@ function content_5964a7b848e5c0_35479507 (Smarty_Internal_Template $_smarty_tpl)
 <!--<form action="index.php?m=admin&f=shop&a=zaddshop" method="post">-->
 
     <table class="table table-bordered table-hover">
-        <tr>
+        <tr class="success">
 
             <td>title</td>
             <td>posid</td>

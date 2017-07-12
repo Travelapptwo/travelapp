@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-12 04:20:01
+/* Smarty version 3.1.30, created on 2017-07-12 05:22:44
   from "E:\sahd\wamp\www\php\mvc\template\admin\lookfl.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596587518560b1_05743140',
+  'unifunc' => 'content_5965960404b8b8_76318221',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c101f125d7d9c58d5548dc8ddf18e40ed6db114' => 
     array (
       0 => 'E:\\sahd\\wamp\\www\\php\\mvc\\template\\admin\\lookfl.html',
-      1 => 1499825945,
+      1 => 1499829761,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596587518560b1_05743140 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5965960404b8b8_76318221 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +33,6 @@ function content_596587518560b1_05743140 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /jquery.min.js"><?php echo '</script'; ?>
 >
-
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /jq.js"><?php echo '</script'; ?>
@@ -54,8 +53,8 @@ function content_596587518560b1_05743140 (Smarty_Internal_Template $_smarty_tpl)
 </head>
 <body>
 
-    <table class="table table-bordered">
-        <tr>
+    <table class="table table-hover  table-bordered">
+        <tr class="success">
             <td>标题</td>
             <td>name</td>
             <td>Ename</td>

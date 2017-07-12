@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 10:42:49
+/* Smarty version 3.1.30, created on 2017-07-12 04:56:04
   from "E:\sahd\wamp\www\php\mvc\template\admin\addshop.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59648f89b58660_78751893',
+  'unifunc' => 'content_59658fc46f8905_15260121',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6e26d38f658347c5a46492467bfdc51f9e2b1244' => 
     array (
       0 => 'E:\\sahd\\wamp\\www\\php\\mvc\\template\\admin\\addshop.html',
-      1 => 1499762377,
+      1 => 1499828160,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59648f89b58660_78751893 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59658fc46f8905_15260121 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,6 +53,9 @@ function content_59648f89b58660_78751893 (Smarty_Internal_Template $_smarty_tpl)
 >
 
     <style>
+        form{
+            vertical-align: top;
+        }
         td{
             text-align: center;
         }
@@ -63,6 +66,15 @@ function content_59648f89b58660_78751893 (Smarty_Internal_Template $_smarty_tpl)
             outline:none;
             border: 0;
             float: left;
+        }
+        #editor{
+            display: inline-block;
+            width:100%;
+            margin: 0 auto;
+        }
+        .uploadbox{
+            display: inline-block;
+            vertical-align: top;
         }
     </style>
 </head>
@@ -119,13 +131,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
         </tr>
 
     </table>
-    内容:  <?php echo '<script'; ?>
+    <div class="nr"> 内容:</div>
+     <?php echo '<script'; ?>
  id="editor" type="text/plain" style="width:500px;height:300px;" name="routedefall"><?php echo '</script'; ?>
 >
     <input type="hidden" name="imgurl">
     <div class="uploadbox"></div>
 
-    <input type="submit" value="提交">
+    <input type="submit" class="btn btn-primary btn-lg btn-block" value="提交">
 </form>
 </body>
 <?php echo '<script'; ?>

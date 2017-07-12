@@ -13,6 +13,9 @@
     <script type="text/javascript" charset="utf-8" src="{JS_PATH}/upload.js"></script>
 
     <style>
+        form{
+            vertical-align: top;
+        }
         td{
             text-align: center;
         }
@@ -23,6 +26,15 @@
             outline:none;
             border: 0;
             float: left;
+        }
+        #editor{
+            display: inline-block;
+            width:100%;
+            margin: 0 auto;
+        }
+        .uploadbox{
+            display: inline-block;
+            vertical-align: top;
         }
     </style>
 </head>
@@ -68,11 +80,12 @@
         </tr>
 
     </table>
-    内容:  <script id="editor" type="text/plain" style="width:500px;height:300px;" name="routedefall"></script>
+    <div class="nr"> 内容:</div>
+     <script id="editor" type="text/plain" style="width:500px;height:300px;" name="routedefall"></script>
     <input type="hidden" name="imgurl">
     <div class="uploadbox"></div>
 
-    <input type="submit" value="提交">
+    <input type="submit" class="btn btn-primary btn-lg btn-block" value="提交">
 </form>
 </body>
 <script>
