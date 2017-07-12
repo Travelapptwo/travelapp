@@ -78,7 +78,7 @@ class db{
         $this->db->query($sql);
         return $this->db->affected_rows;
     }
-    function update(){
+    function update($params=""){
 
             if(!empty($params)){
                 $params=strtolower($params);

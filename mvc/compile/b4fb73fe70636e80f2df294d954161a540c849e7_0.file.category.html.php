@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 09:24:24
+/* Smarty version 3.1.30, created on 2017-07-11 12:26:44
   from "F:\wamp\www\travelapp\mvc\template\index\category.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59647d280e8fe0_01445917',
+  'unifunc' => 'content_5964a7e436e505_90203966',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59647d280e8fe0_01445917 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5964a7e436e505_90203966 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>

@@ -110,49 +110,7 @@
             </a>
         </li>
         {/foreach}
-        <!--        <li>
-                    <a href="">
-                        <div class="liebiao_top">
-                            <div class="mark"></div>
-                            <img src="{IMG_PATH}/sy_liebiao1.jpg" alt="" class="liebiao_img">
-                            <img src="{IMG_PATH}/sy_zhaoxiangji.png" alt="" class="zhaoxiangji">
-                        </div>
-                        <div class="liebiao_bottom">
-                            <p class="title_zimu">zhoubian</p>
-                            <p class="title_zhongwen">周<span>•</span>边<span>•</span>游</p>
-                            <div class="wujiaoxing">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                            </div>
-                            <p class="title">ZHOUBIANXINGB.ANKUAI</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="liebiao_top">
-                            <div class="mark"></div>
-                            <img src="{IMG_PATH}/sy_liebiao1.jpg" alt="" class="liebiao_img">
-                            <img src="{IMG_PATH}/sy_zhaoxiangji.png" alt="" class="zhaoxiangji">
-                        </div>
-                        <div class="liebiao_bottom">
-                            <p class="title_zimu">zhoubian</p>
-                            <p class="title_zhongwen">周<span>•</span>边<span>•</span>游</p>
-                            <div class="wujiaoxing">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                                <img src="{IMG_PATH}/sy_wujiaoxing2.png" alt="">
-                            </div>
-                            <p class="title">ZHOUBIANXINGB.ANKUAI</p>
-                        </div>
-                    </a>
-                </li>-->
-    </ul>
+        </ul>
 </div>
 <!--抢购-->
 <div class="qianggou">
@@ -260,7 +218,7 @@
 <footer>
     <ul>
         <li>
-            <a href="##">
+            <a href="index.php">
                 <img src="{IMG_PATH}/sy_shouye.png" alt="">
                 <span>首页</span>
             </a>
@@ -283,7 +241,7 @@
             </a>
         </li>
         <li>
-            <a href="##">
+            <a href="index.php?m=index&f=myself">
                 <img src="{IMG_PATH}/sy_wode.png" alt="">
                 <span>我的</span>
             </a>
@@ -297,14 +255,14 @@
     //倒计时
     function setTime() {
         var nowdate = new Date();
-        var targettime = new Date(2017, 6, 11, 0, 0, 0);
+        var targettime = new Date(2017, 7, 13, 0, 0, 0);
         var cha = targettime.getTime() - nowdate.getTime();
         var hours = Math.floor(cha / (1000 * 60 * 60));
         var minutes = Math.floor(cha / (1000 * 60) % 60);
         var seconds = Math.floor(cha / 1000 % 60);
-        $(".time-hour").html(hours < 10 ? "0" + hours : hours);
-        $(".time-minute").html(minutes < 10 ? "0" + minutes : minutes);
-        $(".time-second").html(seconds < 10 ? "0" + seconds : seconds);
+        $(".time-hour").html((hours < 10) ? "0" + hours : hours);
+        $(".time-minute").html((minutes < 10) ? "0" + minutes : minutes);
+        $(".time-second").html((seconds < 10 )? "0" + seconds : seconds);
     }
 
     setTime();

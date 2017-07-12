@@ -1,0 +1,122 @@
+
+body,html{
+    width: 100%;
+    height:100%;
+
+}
+body{
+    overflow: scroll;
+    background: #F7F7F7;
+}
+html{
+    position: relative;
+    overflow: hidden;
+}
+
+/*状态栏*/
+
+/*banner*/
+.lm_banner{
+    width:100%;
+    height: 3.05rem;
+    background: #ffffff;
+    overflow: hidden;
+    margin-top: .88rem;
+}
+.lm_banner>.yuan{
+    margin: 0.5rem auto;
+    width:2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(49, 77, 253, 0.1);
+    margin-bottom: 0;
+    position: relative;
+}
+.lm_banner>.yuan>div:nth-child(1){
+    width: 1.7rem;
+    height: 1.7rem;
+    background:rgba(49, 115, 253, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top:.15rem;
+    left:.15rem;
+}
+.lm_banner>.yuan>div:nth-child(2){
+    width: 1.4rem;
+    height: 1.4rem;
+    background:rgb(27, 116, 242);
+    border-radius: 50%;
+    position: absolute;
+    top:.3rem;
+    left:.3rem;
+}
+.lm_banner>.yuan>div:nth-child(3){
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top:.4rem;
+    left:.4rem;
+}
+.lm_banner>.yuan>div:nth-child(3)> a{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.lm_banner>h3{
+    font-weight: normal;
+    text-align: center;
+    margin-top:.1rem ;
+}
+.lm_banner>h3>a{
+    display: block;
+    width:100%;
+    height:100%;
+    color: #252525;
+    font-size: 0.26rem;
+}
+
+.lm_list{
+    width: 100%;
+    height: auto;
+}
+.lm_list>ul{
+    width: 100%;
+    height: auto;
+}
+.lm_list>ul>li{
+    width: 100%;
+    height:.74rem;
+    background: #ffffff;
+    border-bottom: 1px solid#F7F7F7;
+    padding:0 .25rem;
+    line-height: .74rem;
+}
+.lm_list>ul>li:nth-child(3){
+    margin-bottom: .3rem;
+}
+.lm_list li>.sleft{
+    color: #252525;
+    font-size: .26rem;
+    position: absolute;
+}
+.lm_list li>.sright{
+    float: right;
+    font-size:.26rem ;
+    color: #252525;
+
+}
+.lm_list li>img{
+    float: right;
+    width: .2rem;
+    margin-top: .25rem;
+    margin-left: .1rem;
+}
+.lm_list li:nth-child(3) img:nth-of-type(2){
+    width: .5rem;
+    margin-top: .12rem;
+}
+

@@ -10,7 +10,6 @@ $(function () {
     });
     $(".button1").click(function () {
         $(this).addClass("button").siblings().removeClass("button");
-        
         if(flag==true){
             $(".chi").html("路线详情");
             $(".enli").html("ROUTE INTROCTION");
@@ -19,11 +18,13 @@ $(function () {
         }else{
             $(".chi").html("用户评价");
             $(".enli").html("USER EVALUTION");
+            //console.log(flag)
             $.ajax({
                 url:"index.php?m=index&f=xiangqing&a=findmessage",
                 data:{lid:lid},
                 dataType:"json",
                 success:function (e) {
+                    //console.log(e);
                     if(e[0]){
                         var str="<ul class='mui-table-view' style='font-size: 0.2rem'>";
                         for(var i=0;i<e.length;i++) {
