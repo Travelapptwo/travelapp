@@ -36,18 +36,21 @@ $(function () {
             type: "post",
             data: {upass: upass},
             success: function (data) {
+               /* console.log(data);
                 if (data == "ok") {
+
+                    // location.href="index.php";
+                }*/
+                if(data=="ok"){
+                    //alert(1)
+                    $("#Username").css("display","none");
+                    $("#Userpassword").css("display","block");
                     location.href="index.php";
+                }else{
+                   // alert(2)
+                    $(".dlzhong .tishi").html("用户名输入错误!");
+                    $(".dlzhong .tishi").css("display","block");
                 }
-                // if(data=="ok"){
-                //     alert(1)
-                //     /*$("#Username").css("display","none");
-                //     $("#Userpassword").css("display","block");*/
-                // }else{
-                //     alert(2)
-                //     /*$(".dlzhong .tishi").html("用户名输入错误!");
-                //     $(".dlzhong .tishi").css("display","block");*/
-                // }
             }
         })
     })

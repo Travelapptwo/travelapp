@@ -10,8 +10,11 @@ class xiangqing extends indexMain{
     }
     function findmessage(){
         $lid=$_GET["lid"];
+//        echo $lid;
+//        exit();
         $db=new db("message");
         $sql="select message.message,message.mtime,user.uname from message,user where lid={$lid} and user.uid=message.uid";
+
         $results=$db->select($sql);
         $array = array();
         foreach ($results as $v){

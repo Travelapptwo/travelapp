@@ -26,9 +26,7 @@ class login extends indexMain
         $result = $this->db->select();
         foreach ($result as $v) {
             if ($v["uname"] == $uname) {
-                $this->session->set("indexLogin", "yes");
                 $this->session->set("uname", $v["uname"]);
-                $this->session->set("uid", $v["uid"]);
                 echo "ok";
                 exit();
             }
@@ -49,5 +47,8 @@ class login extends indexMain
             }
         }
     }
-
+    function logout(){
+        $this->session->clear();
+        echo "ok";
+    }
 }

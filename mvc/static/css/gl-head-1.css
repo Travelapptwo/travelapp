@@ -1,0 +1,193 @@
+
+body,html{
+    width: 100%;
+    height:100%;
+
+}
+body{
+    overflow: scroll;
+    background: #F7F7F7;
+}
+html{
+    position: relative;
+    overflow: hidden;
+}
+
+/*状态栏*/
+
+/*banner*/
+.name{
+    width: 7rem;
+    height:.74rem ;
+    margin:0 auto;
+    border-bottom: 1px solid lightgreen;
+    margin-top: .88rem;
+    line-height: .74rem;
+    font-size: .26rem;
+}
+.name form{
+    width:100%;
+    height:100%;
+
+}
+.name  input[type=text],.name  input[type=date]{
+    width:100%;
+    display: block;
+    height:100%;
+    border:none;
+}
+.gl_head{
+    width: 100%;
+    height:0.88rem;
+    background: rgba(49, 115, 253, 0.59);
+    position: absolute;
+
+}
+.gl_title{
+    width: 100%;
+    height:0.4rem;
+    position: absolute;
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    bottom:0.24rem;
+    color: white;
+}
+ .gl_leftI{
+    position: absolute;
+    width: 0.44rem;
+    height:0.88rem;
+     left:0.26rem;
+     line-height: 0.88rem;
+     text-align: left;
+
+}
+.gl_rightI{
+    position: absolute;
+    width: 0.88rem;
+    height:0.6rem;
+    right:0.59rem;
+    margin-top:.14rem ;
+    line-height: 0.6rem;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: .28rem;
+}
+.gl_rightI input{
+    background: none;
+    border:none;
+    display: block;
+    width:100%;
+    height:100%;
+    color: #ffffff;
+}
+.gl_leftI a{
+    display: block;
+
+}
+.gl_rightI a{
+    display: block;
+
+}
+.gl_leftI a img{
+   position: absolute;
+    width: 0.26rem;
+    height: 0.24rem;
+    top:0.32rem;
+    left:0rem;
+}
+.gl_rightI a img{
+    position: absolute;
+    width: 0.44rem;
+    height:0.23rem;
+    top:0.32rem;
+    right:0rem;
+}
+
+label[class=error]{
+    display: block;
+    float:left;
+    width:100%;
+    height:0.5rem;
+    line-height: 0.5rem;
+    color:#f33;
+    text-align: right;
+    padding-right:1rem;
+}
+label.upload input{
+    width:1.5rem;
+    height:1.5rem;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border:1px dotted #ccc;
+}
+label.upload input:before{
+    width:100%;
+    height:60%;
+    content: "+";
+    display: block;
+    position:absolute;
+    left:0;
+    top:0;
+    background:#fff;
+    font-size: 1rem;
+    text-align: center;
+    line-height:1rem;
+}
+label.upload input:after{
+    width:100%;
+    height:40%;
+    content: "添加上传";
+    display: block;
+    position:absolute;
+    left:0;
+    top:60%;
+    background:#fff;
+    text-align: center;
+}
+
+.h3{
+    padding:3px 5px;
+    color:#54495A;
+}
+#pre{
+    width:100%;height:10px;border-radius: 4px;border:1px solid #00aaee;
+}
+.progress{
+    height:100%;
+    background:#00AAEE;
+    width:0%;
+}
+.imgbox{
+    width:100%;
+    height:auto;
+}
+.imgbox img{
+    display: block;
+    max-width:100%;
+}
+input.radio{
+    margin: 3px 3px 0px 5px;
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+    background-color: initial;
+    padding: initial;
+    border: initial;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-writing-mode: horizontal-tb;
+    vertical-align: middle;
+    font-size:12rem;
+}

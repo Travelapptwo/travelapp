@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 08:58:05
+/* Smarty version 3.1.30, created on 2017-07-12 03:44:53
   from "F:\wamp\www\travelapp\mvc\template\index\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596476fd514469_93069521',
+  'unifunc' => 'content_59657f1569d138_30799374',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6e489d08141cecbd741fe255041caee6806cdc81' => 
     array (
       0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\index\\index.html',
-      1 => 1499673046,
+      1 => 1499823892,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596476fd514469_93069521 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59657f1569d138_30799374 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -183,63 +183,7 @@ B.ANKUAI</p>
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
-        <!--        <li>
-                    <a href="">
-                        <div class="liebiao_top">
-                            <div class="mark"></div>
-                            <img src="<?php echo IMG_PATH;?>
-/sy_liebiao1.jpg" alt="" class="liebiao_img">
-                            <img src="<?php echo IMG_PATH;?>
-/sy_zhaoxiangji.png" alt="" class="zhaoxiangji">
-                        </div>
-                        <div class="liebiao_bottom">
-                            <p class="title_zimu">zhoubian</p>
-                            <p class="title_zhongwen">周<span>•</span>边<span>•</span>游</p>
-                            <div class="wujiaoxing">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                            </div>
-                            <p class="title">ZHOUBIANXINGB.ANKUAI</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="liebiao_top">
-                            <div class="mark"></div>
-                            <img src="<?php echo IMG_PATH;?>
-/sy_liebiao1.jpg" alt="" class="liebiao_img">
-                            <img src="<?php echo IMG_PATH;?>
-/sy_zhaoxiangji.png" alt="" class="zhaoxiangji">
-                        </div>
-                        <div class="liebiao_bottom">
-                            <p class="title_zimu">zhoubian</p>
-                            <p class="title_zhongwen">周<span>•</span>边<span>•</span>游</p>
-                            <div class="wujiaoxing">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                                <img src="<?php echo IMG_PATH;?>
-/sy_wujiaoxing2.png" alt="">
-                            </div>
-                            <p class="title">ZHOUBIANXINGB.ANKUAI</p>
-                        </div>
-                    </a>
-                </li>-->
-    </ul>
+        </ul>
 </div>
 <!--抢购-->
 <div class="qianggou">
@@ -378,7 +322,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 <footer>
     <ul>
         <li>
-            <a href="##">
+            <a href="index.php">
                 <img src="<?php echo IMG_PATH;?>
 /sy_shouye.png" alt="">
                 <span>首页</span>
@@ -405,7 +349,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
             </a>
         </li>
         <li>
-            <a href="##">
+            <a href="index.php?m=index&f=myself">
                 <img src="<?php echo IMG_PATH;?>
 /sy_wode.png" alt="">
                 <span>我的</span>
@@ -421,14 +365,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
     //倒计时
     function setTime() {
         var nowdate = new Date();
-        var targettime = new Date(2017, 6, 11, 0, 0, 0);
+        var targettime = new Date(2017, 7, 13, 0, 0, 0);
         var cha = targettime.getTime() - nowdate.getTime();
         var hours = Math.floor(cha / (1000 * 60 * 60));
         var minutes = Math.floor(cha / (1000 * 60) % 60);
         var seconds = Math.floor(cha / 1000 % 60);
-        $(".time-hour").html(hours < 10 ? "0" + hours : hours);
-        $(".time-minute").html(minutes < 10 ? "0" + minutes : minutes);
-        $(".time-second").html(seconds < 10 ? "0" + seconds : seconds);
+        $(".time-hour").html((hours < 10) ? "0" + hours : hours);
+        $(".time-minute").html((minutes < 10) ? "0" + minutes : minutes);
+        $(".time-second").html((seconds < 10 )? "0" + seconds : seconds);
     }
 
     setTime();

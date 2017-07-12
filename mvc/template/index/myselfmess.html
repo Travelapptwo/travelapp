@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}/basic.css">
+    <link rel="stylesheet" href="{CSS_PATH}/gl-head.css">
+    <link rel="stylesheet" href="{CSS_PATH}/lm-gr.css">
+    <script src="{JS_PATH}/rem.js"></script>
+</head>
+<body>
+    <div class="gl_head">
+
+        <div class="gl_title"><span>个人资料</span></div>
+        <div class="gl_leftI"><a href="index.php?m=index&f=myself"><img src="{IMG_PATH}/gl1.png" alt=""></a></div>
+        <div class="gl_rightI"></div>
+    </div>
+    <div class="lm_banner">
+        <div class="yuan">
+            <div></div>
+            <div></div>
+            <div style="background-image: url('{if $result[0]['upicture']} {$result[0]['upicture']} {else} {IMG_PATH}/wyb_02.png {/if}    ')"></div>
+        </div>
+        <!--<img src="image/lm_03.png" alt="">-->
+        <h3><a href="index.php?m=index&f=myself&a=messchange&type=upicture">更改头像</a></h3>
+    </div>
+    <div class="lm_list" id="{$result[0]['uid']}">
+        <ul>
+            <li><span class="sleft">昵称</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=unickname">{$result[0]['unickname']}</a></li>
+            <li><span class="sleft">个性签名</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=umess">{if $result[0]['umess']|truncate:15:"...":true} {$result[0]['umess']} {else}  这个人很懒，什么也没留下{/if}</a></li>
+            <li><span class="sleft">性别</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=usex">{$result[0]['usex']}</a></li>
+            <li><span class="sleft">生日</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=ubirthday">{$result[0]['ubirthday']}</a></li>
+            <li><span class="sleft">家乡</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=uhome">{$result[0]['uhome']}</a></li>
+            <li><span class="sleft">学校</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=uschool">{$result[0]['uschool']}</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
