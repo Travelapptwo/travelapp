@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 12:16:24
+/* Smarty version 3.1.30, created on 2017-07-12 04:20:01
   from "E:\sahd\wamp\www\php\mvc\template\admin\lookfl.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5964a57802f803_51610056',
+  'unifunc' => 'content_596587518560b1_05743140',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c101f125d7d9c58d5548dc8ddf18e40ed6db114' => 
     array (
       0 => 'E:\\sahd\\wamp\\www\\php\\mvc\\template\\admin\\lookfl.html',
-      1 => 1499768182,
+      1 => 1499825945,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5964a57802f803_51610056 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596587518560b1_05743140 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +32,11 @@ function content_5964a57802f803_51610056 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /jquery.min.js"><?php echo '</script'; ?>
+>
+
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jq.js"><?php echo '</script'; ?>
 >
     <style>
         td{
@@ -48,7 +53,6 @@ function content_5964a57802f803_51610056 (Smarty_Internal_Template $_smarty_tpl)
     </style>
 </head>
 <body>
-<form action="index.php?m=admin&f=shop&a=addfl" method="post">
 
     <table class="table table-bordered">
         <tr>
@@ -60,7 +64,7 @@ function content_5964a57802f803_51610056 (Smarty_Internal_Template $_smarty_tpl)
         </tr>
 
     </table>
-</form>
+
 </body>
 <?php echo '<script'; ?>
 >
@@ -108,11 +112,23 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
     console.log(arrr);
     arrr.forEach(function(e,i){
-        var a='<tr attr='+e['id']+'><td>'+e['a']+'级标题</td><td class="bj" attr="name">'+e['name']+'</td><td class="bj" attr="Ename">'+e['Ename']+'</td><td class="bj" attr="xingji">'+e['xingji']+'</td><td><a href="index.php?m=admin&f=shop&a=del&id='+e['id']+'">删除</a></td></tr>';
+        var a='<tr attr='+e['id']+'><td>'+e['a']+'级标题</td><td class="bj" attr="name">'+e['name']+'</td><td class="bj" attr="Ename">'+e['Ename']+'</td><td class="bj" attr="xingji">'+e['xingji']+'</td><td class="sc" >删除</td></tr>';
         $("table").append(a);
-        console.log(a);
-    })
-    $(".table").delegate("td","dblclick",function(){
+
+    });
+    $(".table").delegate(".sc","click",function(){
+        var id=$(this).parent("tr").attr("attr");
+        var sc=$(this);
+        for(var z=0;z<arrr.length;z++){
+            if(arrr[z]["pid"]==id){
+                alert("有子类不能删除");
+               return;
+            }
+        }
+        location.href='index.php?m=admin&f=shop&a=del&id='+id;
+        return;
+    });
+    $(".table").delegate(".bj","dblclick",function(){
         var td=$(this);
         //1,取出当前td中的文本内容保存起来
         var text=td.text();

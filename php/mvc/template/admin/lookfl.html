@@ -5,6 +5,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
     <script src="{JS_PATH}/jquery.min.js"></script>
+
+    <script src="{JS_PATH}/jq.js"></script>
     <style>
         td{
             text-align: center;
@@ -20,7 +22,6 @@
     </style>
 </head>
 <body>
-<form action="index.php?m=admin&f=shop&a=addfl" method="post">
 
     <table class="table table-bordered">
         <tr>
@@ -32,7 +33,7 @@
         </tr>
 
     </table>
-</form>
+
 </body>
 <script>
     var arr=[];
@@ -65,11 +66,23 @@
 
     console.log(arrr);
     arrr.forEach(function(e,i){
-        var a='<tr attr='+e['id']+'><td>'+e['a']+'级标题</td><td class="bj" attr="name">'+e['name']+'</td><td class="bj" attr="Ename">'+e['Ename']+'</td><td class="bj" attr="xingji">'+e['xingji']+'</td><td><a href="index.php?m=admin&f=shop&a=del&id='+e['id']+'">删除</a></td></tr>';
+        var a='<tr attr='+e['id']+'><td>'+e['a']+'级标题</td><td class="bj" attr="name">'+e['name']+'</td><td class="bj" attr="Ename">'+e['Ename']+'</td><td class="bj" attr="xingji">'+e['xingji']+'</td><td class="sc" >删除</td></tr>';
         $("table").append(a);
-        console.log(a);
-    })
-    $(".table").delegate("td","dblclick",function(){
+
+    });
+    $(".table").delegate(".sc","click",function(){
+        var id=$(this).parent("tr").attr("attr");
+        var sc=$(this);
+        for(var z=0;z<arrr.length;z++){
+            if(arrr[z]["pid"]==id){
+                alert("有子类不能删除");
+               return;
+            }
+        }
+        location.href='index.php?m=admin&f=shop&a=del&id='+id;
+        return;
+    });
+    $(".table").delegate(".bj","dblclick",function(){
         var td=$(this);
         //1,取出当前td中的文本内容保存起来
         var text=td.text();
