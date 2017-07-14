@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-12 05:59:41
+/* Smarty version 3.1.30, created on 2017-07-14 11:16:52
   from "F:\wamp\www\travelapp\mvc\template\index\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59659ead7d4670_06245245',
+  'unifunc' => 'content_59688c04c53bf4_96241569',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6e489d08141cecbd741fe255041caee6806cdc81' => 
     array (
       0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\index\\index.html',
-      1 => 1499831980,
+      1 => 1500023811,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59659ead7d4670_06245245 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59688c04c53bf4_96241569 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -405,7 +405,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
             </a>
         </li>
         <li>
-            <a href="##">
+            <a href="index.php?m=index&f=myself">
                 <img src="<?php echo IMG_PATH;?>
 /sy_wode.png" alt="">
                 <span>我的</span>
