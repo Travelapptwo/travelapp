@@ -6,6 +6,11 @@ class index extends indexMain
     {
         $this->smarty->assign("login", $this->session->get("indexLogin"));
         $this->smarty->assign("mname", $this->session->get("mname"));
+        if($uid=$this->session->get("uid")){
+            $dbus=new db("user");
+            $resultus = $dbus->where("uid=".$uid)->select();
+            $this->smarty->assign("resultus", $resultus);
+        }
 
         $db = new db("category");
         $result = $db->where("pid=0")->select();
@@ -35,20 +40,23 @@ class index extends indexMain
         $this->smarty->display("login.html");
     }
     function logins(){
-        $login=$this->session->get("indexLogin");
+        $this->session->get("indexLogin");
+        if($login=$this->session->get("indexLogin")){
+            $uid=$this->session->get("uid");
 
-        $uid=$this->session->get("uid");
+            $uname=$this->session->get("uname");
+            $this->smarty->assign("userlogin",$login);
+            $this->smarty->assign("uid",$uid);
+            $this->smarty->assign("uname",$uname);
+        }
 
-        $uname=$this->session->get("uname");
-        $this->smarty->assign("userlogin",$login);
-        $this->smarty->assign("uid",$uid);
-        $this->smarty->assign("uname",$uname);
         $this->smarty->display("logins.html");
     }
     function loginss(){
         $name=$_POST["name"];
         echo $name;
     }
+
     function register(){
         $this->smarty->display("register.html");
     }

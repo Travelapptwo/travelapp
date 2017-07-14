@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 348612 */
+    src: url('http://at.alicdn.com/t/font_mz6yuix6boz85mi.css');
+    src: url('//at.alicdn.com/t/font_mz6yuix6boz85mi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_mz6yuix6boz85mi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_mz6yuix6boz85mi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_mz6yuix6boz85mi.svg#iconfont') format('svg');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none; /* 清除a标签下划线 */
+    list-style-type:none;
+}
+a{
+    color: #808080;
+
+
+}
+a:hover{
+    color: #afdd22;
+}
+a{
+    text-decoration:none;
+}
+.back{
+    width: 0.48rem;
+    height: 0.48rem;
+    margin-left: 0.3rem;
+    margin-top: 0.55rem;
+    float: left;
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.form{
+    margin-top: 1.1rem;
+    /*background: black;*/
+}
+.top{
+    font-size: 0.22rem;
+    line-height:0.5rem;
+    font-family: "sanfrancisco";
+    color: #406ae9;
+}
+.bottom{
+    width:100%;
+    height:0.6rem;
+    background: #F7F7F7;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    border: 1px solid #DDDDDD;
+
+}
+.unametishi img{
+    width: 0.42rem;
+    height: 0.42rem;
+    float: left;
+    margin-left: 0.36rem;
+    margin-top: 0.16rem;
+}
+.unametishi {
+    width: 60%;
+    height: 0.8rem;
+    background: #3C464F;
+    border: 0.03rem solid #ccc;
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0.9rem;
+    margin: auto;
+    display: none;
+    transition: all 0.5s linear;
+    font-size: 0.24rem;
+    color: #E61F36;
+    text-align: center;
+    line-height: 0.7rem;
+    z-index: 99;
+}
+
+.unametishi p {
+    float: left;
+    margin-left: 0.2rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #e61f36;
+}
+
+.left{
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0.1rem;
+    border-radius: 0.4rem;
+    float: left;
+    position: relative;
+}
+.left img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.right{
+    width:4rem;
+    height: 100%;
+    float: left;
+
+    padding: 0.1rem;
+}
+input{
+    width:100%;
+    height: 100%;
+    background:none;
+    outline:none;
+    border: 0;
+    float: left;
+}
+.xyb{
+    width:2.5rem;
+    height: 0.7rem;
+    background: #A3A4A6;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    bottom: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #807e7e;
+}
+span{
+    display: block;
+
+    font-size: 12px;
+}
+.xuanzhong{
+    color: #FCFAFA;
+    background: #2A4BD8;
+}

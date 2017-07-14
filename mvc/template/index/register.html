@@ -2,205 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>注册</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" href="{CSS_PATH}/basic.css">
-
+    <link rel="stylesheet" href="{CSS_PATH}/register.css">
     <script src="{JS_PATH}/rem.js"></script>
     <script src="{JS_PATH}/jquery.js"></script>
+    <script src="{JS_PATH}/register.js"></script>
     <style>
-        @font-face {
-            font-family: 'iconfont';  /* project id 348612 */
-            src: url('http://at.alicdn.com/t/font_mz6yuix6boz85mi.css');
-            src: url('//at.alicdn.com/t/font_mz6yuix6boz85mi.eot?#iefix') format('embedded-opentype'),
-            url('//at.alicdn.com/t/font_mz6yuix6boz85mi.woff') format('woff'),
-            url('//at.alicdn.com/t/font_mz6yuix6boz85mi.ttf') format('truetype'),
-            url('//at.alicdn.com/t/font_mz6yuix6boz85mi.svg#iconfont') format('svg');
-        }
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            text-decoration: none; /* 清除a标签下划线 */
-            list-style-type:none;
-        }
-        a{
-            color: #808080;
 
-
-        }
-        a:hover{
-            color: #afdd22;
-        }
-        a{
-            text-decoration:none;
-        }
-        body,html{
-            width:100%;
-            height:100%;
+        body, html {
+            width: 100%;
+            height: 100%;
             background-image: url("{IMG_PATH}/zj-bj.png");
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .nr{
+
+        .nr {
             padding: 0.5rem;
             padding-bottom: 0.9rem;
-            width:6rem;
-            height:7.4rem;
+            width: 6rem;
+            height: 7.4rem;
             position: absolute;
-            left:0;
-            right:0;
+            left: 0;
+            right: 0;
+        }
+
+        .nr {
+            padding: 0.5rem;
+            padding-bottom: 0.9rem;
+            width: 6rem;
+            height: 7.4rem;
+            position: absolute;
+            left: 0;
+            right: 0;
             margin: auto;
             bottom: 2rem;
             border-radius: 5px;
             background-color: white;
             background-image: url("{IMG_PATH}/zj-xbj.png");
-
             background-size: cover;
-            background-repeat: no-repeat
+            background-repeat: no-repeat;
+        }
 
-        }
-        .form{
-            margin-top: 2rem;
-            /*background: black;*/
-        }
-        .top{
-            font-size: 0.22rem;
-            line-height:0.5rem;
-            font-family: "sanfrancisco";
-            color: #406ae9;
-        }
-        .bottom{
-            width:100%;
-            height:0.6rem;
-            background: #F7F7F7;
-            border-radius: 0.6rem;
-            overflow: hidden;
-            border: 1px solid #DDDDDD;
-
-        }
-        .left{
-            width: 0.4rem;
-            height: 0.4rem;
-            margin: 0.1rem;
-            border-radius: 0.4rem;
-            float: left;
-            background: blue;
-        }
-        .right{
-            width:4rem;
-            height: 100%;
-            float: left;
-
-            padding: 0.1rem;
-        }
-        input{
-            width:100%;
-            height: 100%;
-            background:none;
-            outline:none;
-            border: 0;
-            float: left;
-        }
-        .xyb{
-            width:2.5rem;
-            height: 0.7rem;
-            background: #A3A4A6;
-            position: absolute;
-            left:0;
-            right:0;
-            margin: auto;
-            bottom: 0.5rem;
-            border-radius: 0.5rem;
-            text-align: center;
-            color: #807e7e;
-        }
-        span{
-            display: block;
-
-            font-size: 12px;
-        }
-        .xuanzhong{
-            color: #FCFAFA;
-            background: #2A4BD8;
-        }
     </style>
 </head>
 <body>
 <div class="nr">
-    <div class="form">
+    <form class="form">
+        <div class="unametishi">
+            <img src="{IMG_PATH}/dyl_gantanhao.png" alt="">
+            <p></p>
+        </div>
         <div class="top">..Username</div>
         <div class="bottom">
             <div class="left">
-
+                <img src="{IMG_PATH}/dyl_username.png" alt="">
             </div>
             <div class="right">
-                <input type="text" placeholder="用户名" name="name">
+                <input type="text" placeholder="请输入用户名" name="uname">
             </div>
+        </div>
+        <div class="top">..Phone number</div>
+        <div class="bottom">
+            <div class="left">
+                <img src="{IMG_PATH}/dyl_phone.png" alt="">
+            </div>
+            <div class="right">
+                <input type="text" placeholder="请输入手机号" name="uphonenum">
+            </div>
+            <div class="top">..Password</div>
         </div>
         <div class="top">..Password</div>
         <div class="bottom">
             <div class="left">
-
+                <img src="{IMG_PATH}/dyl_password.png" alt="">
             </div>
             <div class="right">
-                <input type="password" placeholder="密码" name="password1">
+                <input type="password" placeholder="请输入密码" name="upass">
             </div>
         </div>
+        <div class="top">..Password Again</div>
         <div class="bottom">
             <div class="left">
-
+                <img src="{IMG_PATH}/dyl_password.png" alt="">
             </div>
             <div class="right">
-                <input type="password" placeholder="再次输入密码" name="password2">
+                <input type="password" placeholder="请再次输入密码" name="upass2">
             </div>
         </div>
-
-    </div>
+    </form>
     <div class="xyb">
-        <span>注册</span>
-        <span>XIAYIBU</span>
+        <span>下一步</span>
+        <span>NEXT</span>
     </div>
-
 </div>
-<div class="iconfont">&#xe657;</div>
+<a href="JavaScript:history.go(-1)">
+    <div class="back"><img src="{IMG_PATH}/dyl_fanhui.png" alt=""></div>
+</a>
 </body>
-<script>
-    $("input[name=name]").blur(function(){
-        if(!$(this).val()==""){
-            $(".xyb").addClass("xuanzhong");
-
-        }else {
-            $(".xyb").removeClass("xuanzhong");
-        }
-
-    });
-    $(".xyb").click(function(){
-
-        if($(".xyb").hasClass("xuanzhong")){
-            var name=$("input[name=name]").val();
-            var password=$("input[name=password]").val();
-            if(name==""){
-                alert("用户名不能为空")
-            }else if(password==""){
-                alert("密码不能为空")
-            }else {
-
-                $.ajax({
-                    type: 'POST',
-                    url:"index.php?f=index&a=loginss",
-                    data:{
-                        name:name,password:password
-                    },
-                    success:function(e){
-                        alert(e);
-                    }
-                });
-            }
-
-        }
-    })
-
-</script>
 </html>

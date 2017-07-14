@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-12 03:44:53
+/* Smarty version 3.1.30, created on 2017-07-12 05:59:41
   from "F:\wamp\www\travelapp\mvc\template\index\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59657f1569d138_30799374',
+  'unifunc' => 'content_59659ead7d4670_06245245',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6e489d08141cecbd741fe255041caee6806cdc81' => 
     array (
       0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\index\\index.html',
-      1 => 1499823892,
+      1 => 1499831980,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59657f1569d138_30799374 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59659ead7d4670_06245245 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,6 +53,34 @@ function content_59657f1569d138_30799374 (Smarty_Internal_Template $_smarty_tpl)
             gallery.slider({
                 interval: 2000
             });
+
+            //退出登陆
+            $(".logout").click(function () {
+                $.ajax({
+                    url: "index.php?m=index&f=login&a=logout",
+                    type: "post",
+                    success: function (e) {
+                        if (e == "ok") {
+                            location.href = "index.php";
+                        }
+                    }
+                })
+            });
+            //倒计时
+            function setTime() {
+                var nowdate = new Date();
+                var targettime = new Date(2017, 7, 13, 0, 0, 0);
+                var cha = targettime.getTime() - nowdate.getTime();
+                var hours = Math.floor(cha / (1000 * 60 * 60));
+                var minutes = Math.floor(cha / (1000 * 60) % 60);
+                var seconds = Math.floor(cha / 1000 % 60);
+                $(".time-hour").html(hours < 10 ? "0" + hours : hours);
+                $(".time-minute").html(minutes < 10 ? "0" + minutes : minutes);
+                $(".time-second").html(seconds < 10 ? "0" + seconds : seconds);
+            }
+
+            setTime();
+            setInterval(setTime, 1000);
         });
     <?php echo '</script'; ?>
 >
@@ -96,44 +124,72 @@ function content_59657f1569d138_30799374 (Smarty_Internal_Template $_smarty_tpl)
         <p>C H A N G E T H E W O R D</p>
     </div>
 </div>
-<!--DESIGEr takling-->
+<!--user-->
+
+
 <div class="banner-bottom">
+
+    <img src="<?php echo IMG_PATH;?>
+/sy_userback.png" alt="">
+    <?php if ($_smarty_tpl->tpl_vars['login']->value) {?>
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['resultus']->value, 'uv');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['uv']->value) {
+?>
     <div class="title">
-        <p>DESIGEr takling</p>
-        <p>
-            <img src="<?php echo IMG_PATH;?>
-/sy_sanjiao.png" alt="">
-            <span>4'32"</span>
-        </p>
+        <p>User message</p>
+
         <ul class="wujiaoxing">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <span><?php echo $_smarty_tpl->tpl_vars['uv']->value["usex"];?>
+</span>
+            <p class="logout">登出</p>
         </ul>
+
     </div>
-    <p>生活是不断需程也是不断而非简单享乐的过程</p>
+    <p style="padding-left: 0.8rem"><?php echo $_smarty_tpl->tpl_vars['uv']->value["umess"];?>
+</p>
     <div class="info">
         <div class="touxiang">
             <img src="<?php echo IMG_PATH;?>
 /sy_touxiang1.png" alt="">
         </div>
-        <p>Jim.Green</p>
+        <p><?php echo $_smarty_tpl->tpl_vars['uv']->value["unickname"];?>
+</p>
         <div class="address">
             <img src="<?php echo IMG_PATH;?>
-/sy_adress.png" alt="">
-            <p>Queen.N.Y</p>
+/sy_dizhi.png" alt="">
+            <p><?php echo $_smarty_tpl->tpl_vars['uv']->value["uhome"];?>
+</p>
         </div>
         <div class="time">
             <img src="<?php echo IMG_PATH;?>
 /sy_time.png" alt="">
-            <p>4.26 2017</p>
+            <p><?php echo $_smarty_tpl->tpl_vars['uv']->value["ubirthday"];?>
+</p>
         </div>
     </div>
+    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
+    <?php } else { ?>
+    <div class="wel">
+    欢迎您光临惜游，请先
+    <a href="index.php?m=index&f=index&a=logins" class="loginBtn">
+        登陆
+    </a>，没有账号欢迎
+    <a href="index.php?m=index&f=index&a=register" class="regBtn">
+        注册
+    </a></div>
+    <?php }?>
 </div>
+
 <!--列表-->
 <div class="liebiao">
-    <ul>
+    <ul class="">
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result']->value, 'v');
 if ($_from !== null) {
@@ -183,7 +239,7 @@ B.ANKUAI</p>
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
-        </ul>
+    </ul>
 </div>
 <!--抢购-->
 <div class="qianggou">
@@ -322,7 +378,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 <footer>
     <ul>
         <li>
-            <a href="index.php">
+            <a href="##">
                 <img src="<?php echo IMG_PATH;?>
 /sy_shouye.png" alt="">
                 <span>首页</span>
@@ -349,7 +405,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
             </a>
         </li>
         <li>
-            <a href="index.php?m=index&f=myself">
+            <a href="##">
                 <img src="<?php echo IMG_PATH;?>
 /sy_wode.png" alt="">
                 <span>我的</span>
@@ -360,23 +416,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 </footer>
 </body>
 </html>
-<?php echo '<script'; ?>
->
-    //倒计时
-    function setTime() {
-        var nowdate = new Date();
-        var targettime = new Date(2017, 7, 13, 0, 0, 0);
-        var cha = targettime.getTime() - nowdate.getTime();
-        var hours = Math.floor(cha / (1000 * 60 * 60));
-        var minutes = Math.floor(cha / (1000 * 60) % 60);
-        var seconds = Math.floor(cha / 1000 % 60);
-        $(".time-hour").html((hours < 10) ? "0" + hours : hours);
-        $(".time-minute").html((minutes < 10) ? "0" + minutes : minutes);
-        $(".time-second").html((seconds < 10 )? "0" + seconds : seconds);
-    }
-
-    setTime();
-    setInterval(setTime, 1000);
-<?php echo '</script'; ?>
-><?php }
+<?php }
 }

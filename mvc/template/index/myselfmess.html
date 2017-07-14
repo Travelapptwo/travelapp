@@ -28,12 +28,12 @@
     </div>
     <div class="lm_list" id="{$result[0]['uid']}">
         <ul>
-            <li><span class="sleft">昵称</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=unickname">{$result[0]['unickname']}</a></li>
-            <li><span class="sleft">个性签名</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=umess">{if $result[0]['umess']|truncate:15:"...":true} {$result[0]['umess']} {else}  这个人很懒，什么也没留下{/if}</a></li>
-            <li><span class="sleft">性别</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=usex">{$result[0]['usex']}</a></li>
-            <li><span class="sleft">生日</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=ubirthday">{$result[0]['ubirthday']}</a></li>
-            <li><span class="sleft">家乡</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=uhome">{$result[0]['uhome']}</a></li>
-            <li><span class="sleft">学校</span><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=uschool">{$result[0]['uschool']}</a></li>
+            <li><span class="sleft">昵称</span><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=unickname"><img src="{IMG_PATH}/lm_07.png" alt=""></a><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=unickname">{$result[0]['unickname']}</a></li>
+            <li><span class="sleft">个性签名</span><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=umess"><img src="{IMG_PATH}/lm_07.png" alt=""></a><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=umess">{if $result[0]['umess']|truncate:15:"...":true} {$result[0]['umess']} {else}  这个人很懒，什么也没留下{/if}</a></li>
+            <li><span class="sleft">性别</span><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=usex"><img src="{IMG_PATH}/lm_07.png" alt=""></a><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=usex">{$result[0]['usex']}</a></li>
+            <li><span class="sleft">生日</span><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=ubirthday"><img src="{IMG_PATH}/lm_07.png" alt=""></a><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=ubirthday">{$result[0]['ubirthday']}</a></li>
+            <li><span class="sleft">家乡</span><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=uhome"></a><img src="{IMG_PATH}/lm_07.png" alt=""><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=uhome">{$result[0]['uhome']}</a></li>
+            <li><span class="sleft">学校</span><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=uschool"><img src="{IMG_PATH}/lm_07.png" alt=""></a><a class="sright" href="index.php?m=index&f=myself&a=messchange&type=uschool">{$result[0]['uschool']}</a></li>
         </ul>
     </div>
 

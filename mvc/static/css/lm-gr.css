@@ -109,7 +109,7 @@ html{
     color: #252525;
 
 }
-.lm_list li>img{
+.lm_list li img{
     float: right;
     width: .2rem;
     margin-top: .25rem;

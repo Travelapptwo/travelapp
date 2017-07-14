@@ -184,7 +184,7 @@ header {
 .banner-bottom {
     width: 6.27rem;
     height: 1.54rem;
-    background: #fff;
+    /*background: #fff;*/
     margin: -0.75rem auto;
     position: relative;
     z-index: 999;
@@ -193,21 +193,18 @@ header {
     overflow: hidden;
 }
 
-.dian-line {
-    /*width: 100%;*/
-    height: 0.04rem;
-    line-height: 0.04rem;
-    position: absolute;
-    top: -1.02rem;
-    color: #ccc;
-    z-index: -1;
-}
-
 .banner-bottom .title {
     width: 100%;
     height: 0.5rem;
 }
-
+.banner-bottom img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+}
 .banner-bottom .title p {
     margin-top: 0.1rem;
     font-size: 0.34rem;
@@ -225,6 +222,10 @@ header {
 }
 
 .banner-bottom .title span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
     color: #f51a36;
     font-size: 0.2rem;
 }
@@ -237,12 +238,28 @@ ul, li {
 
 .banner-bottom .title ul.wujiaoxing {
     float: right;
-    /*width: 1.35rem;*/
+    width: 1.35rem;
     height: 0.5rem;
-    padding-top: 0.28rem;
-    margin-right: 0.1rem;
+    padding-top: 0.21rem;
+    margin-right: 0.3rem;
+    position: relative;
 }
 
+.banner-bottom .loginBtn, .banner-bottom .regBtn {
+/*    margin: 0.1rem 0.25rem;
+    display: block;
+    width: 40%;
+    height: 0.6rem;
+    float: left;
+    text-align: center;
+    line-height: 0.6rem;
+    border-radius: 0.1rem;*/
+    color: #007aff;
+}
+div.wel{
+    margin: 0.1rem 0.25rem;
+    font-size: 0.2rem;
+}
 .banner-bottom .title ul.wujiaoxing li {
     width: 0.2rem;
     height: 0.2rem;
@@ -252,9 +269,24 @@ ul, li {
     background-size: cover;
 }
 
+.banner-bottom .title .logout {
+    position: absolute;
+    top:0;
+    right:0;
+    float: right;
+    font-size: 0.18rem;
+    /*background: #24CDED;*/
+    border-radius: 0.1rem;
+    width: 0.7rem;
+    height: 0.4rem;
+    text-align: center;
+    line-height: 0.4rem;
+    color: #24CDED;
+}
+
 .banner-bottom > p {
     width: 100%;
-    height: 0.4rem;
+    height: 0.3rem;
     float: left;
     color: #a7a7a7;
     font-family: "苹方";
@@ -267,22 +299,25 @@ ul, li {
 .banner-bottom .info {
     float: left;
     width: 100%;
-    height: 0.65rem;
-
+    height: 0.7rem;
+    line-height: 0.5rem;
 }
 
 .banner-bottom .info .touxiang {
     float: left;
-    width: 0.51rem;
-    height: 0.51rem;
+    width: 0.6rem;
+    height: 0.6rem;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
 }
 
 .banner-bottom .info .touxiang img {
-    float: left;
-    width: 0.62rem;
-    height: 0.65rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 .banner-bottom .info > p {
@@ -302,24 +337,36 @@ ul, li {
     float: left;
     /*width: 1.4rem;*/
     height: 0.5rem;
+    position: relative;
 }
 
-.banner-bottom .info .jdms-top-time {
+.banner-bottom .info .time {
     margin-left: 0.2rem;
+
 }
 
-.banner-bottom .info .address img, .banner-bottom .info .jdms-top-time img {
+.banner-bottom .info .address img, .banner-bottom .info .time img {
     width: 0.32rem;
     height: 0.32rem;
     float: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-.banner-bottom .info .address p, .banner-bottom .info .jdms-top-time p {
-    margin-left: 0.1rem;
+.banner-bottom .info .address p, .banner-bottom .info .time p {
+    padding-left: 0.4rem;
     float: left;
     font-family: "三番";
     font-size: 0.2rem;
     color: #c2c2c2;
+}
+
+.banner-bottom .info .time p {
+    width: 2rem;
+    height: 100%;
+    overflow: hidden;
 }
 
 /*列表*/
@@ -329,18 +376,29 @@ ul, li {
     height: 3.8rem;
     overflow: hidden;
     z-index: 999;
+    position: relative;
 }
 
 .liebiao ul {
-    width: 130%;
-    height: 100%;
+    width: 6.6rem;
+    height: 3.8rem;
     z-index: 999;
+    margin: 0 auto;
+
+}
+
+.mui-slider-indicator {
+    width: 150%;
+    height: 3.8rem;
+    z-index: 999;
+    overflow: hidden;
+    position: absolute;
 
 }
 
 .liebiao ul li {
     width: 3.1rem;
-    height: 100%;
+    height: 3.8rem;
     margin-left: 0.13rem;
     background: #fff;
     float: left;
@@ -705,6 +763,11 @@ footer ul li a span {
     margin: auto;
 }
 
+/*footer ul li:nth-child(3) a span{
+    font-size: 0.44rem;
+    color: #000;
+    font-weight: bolder;
+}*/
 footer ul li:nth-child(3) img {
     width: 1.01rem;
     height: 0.94rem;

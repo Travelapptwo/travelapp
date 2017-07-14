@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 12:26:50
+/* Smarty version 3.1.30, created on 2017-07-12 05:40:18
   from "F:\wamp\www\travelapp\mvc\template\index\logins.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5964a7ea031af3_26502875',
+  'unifunc' => 'content_59659a22eb1748_32940089',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cfbeba8ac6f161734e0160ecceaf5432ee605f02' => 
     array (
       0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\index\\logins.html',
-      1 => 1499745708,
+      1 => 1499827038,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5964a7ea031af3_26502875 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59659a22eb1748_32940089 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -58,13 +58,6 @@ function content_5964a7ea031af3_26502875 (Smarty_Internal_Template $_smarty_tpl)
         }
     </style>
 </head>
-<?php if ($_smarty_tpl->tpl_vars['userlogin']->value) {
-echo '<script'; ?>
->
-    alert("您已登录");location.href="index.php"
-<?php echo '</script'; ?>
->
-<?php } else { ?>
 <body>
 <div class="bigbox">
     <div class="dl" id="Username">
@@ -134,6 +127,5 @@ echo '<script'; ?>
     </div>
 </div>
 </body>
-<?php }?>
 </html><?php }
 }
