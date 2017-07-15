@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 19:57:59
-  from "E:\sahd\wamp\www\php\mvc\template\admin\listsAdd.html" */
+/* Smarty version 3.1.30, created on 2017-07-15 03:04:47
+  from "F:\wamp\www\travelapp\mvc\template\admin\chakan.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59626ea7380922_50795268',
+  'unifunc' => 'content_59696a2f78a889_34407024',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '514303fd4b49cb97d4504ecec809efad97af6f98' => 
+    '7bf4f91db51ac06da485458229d9db295a5dba48' => 
     array (
-      0 => 'E:\\sahd\\wamp\\www\\php\\mvc\\template\\admin\\listsAdd.html',
-      1 => 1499623072,
+      0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\admin\\chakan.html',
+      1 => 1499621494,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59626ea7380922_50795268 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59696a2f78a889_34407024 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -49,20 +49,20 @@ function content_59626ea7380922_50795268 (Smarty_Internal_Template $_smarty_tpl)
 <table class="table table-bordered">
     <tr>
         <td>id</td>
-        <td>位置</td>
+        <td>name</td>
         <td>操作</td>
     </tr>
     <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['re']->value, 'v');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result']->value, 'v');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
     <tr>
-        <td><?php echo $_smarty_tpl->tpl_vars['v']->value["posid"];?>
+        <td><?php echo $_smarty_tpl->tpl_vars['v']->value["aid"];?>
 </td>
-        <td><?php echo $_smarty_tpl->tpl_vars['v']->value["posname"];?>
+        <td><?php echo $_smarty_tpl->tpl_vars['v']->value["aname"];?>
 </td>
-        <td><a href="index.php?f=lists&m=admin&a=del&id=<?php echo $_smarty_tpl->tpl_vars['v']->value['posid'];?>
+        <td><a href="index.php?f=user&m=admin&a=del&id=<?php echo $_smarty_tpl->tpl_vars['v']->value['aid'];?>
 ">删除</a></td>
     </tr>
     <?php

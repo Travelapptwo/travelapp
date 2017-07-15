@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 06:01:57
-  from "E:\sahd\wamp\www\php\mvc\template\admin\addfl.html" */
+/* Smarty version 3.1.30, created on 2017-07-15 03:04:48
+  from "F:\wamp\www\travelapp\mvc\template\admin\addfl.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59644db5ab7412_99160033',
+  'unifunc' => 'content_59696a30ba4349_01348538',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '523dc4caa24b9cb9b44dece173f78aeabd994a21' => 
+    '18d1e064e0935129556c42eb3a2023e84156c78a' => 
     array (
-      0 => 'E:\\sahd\\wamp\\www\\php\\mvc\\template\\admin\\addfl.html',
-      1 => 1499745715,
+      0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\admin\\addfl.html',
+      1 => 1499745716,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59644db5ab7412_99160033 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59696a30ba4349_01348538 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">

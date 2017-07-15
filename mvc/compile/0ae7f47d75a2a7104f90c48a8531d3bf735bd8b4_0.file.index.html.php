@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-14 11:18:19
+/* Smarty version 3.1.30, created on 2017-07-15 03:04:35
   from "F:\wamp\www\travelapp\mvc\template\admin\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59688c5b801580_43608052',
+  'unifunc' => 'content_59696a235f50e0_48051055',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0ae7f47d75a2a7104f90c48a8531d3bf735bd8b4' => 
     array (
       0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\admin\\index.html',
-      1 => 1499611735,
+      1 => 1499617960,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59688c5b801580_43608052 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59696a235f50e0_48051055 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -53,7 +53,7 @@ function content_59688c5b801580_43608052 (Smarty_Internal_Template $_smarty_tpl)
     </div>
     <div class="form-group">
         <label>验证码</label>
-        <input name="code" type="text" class="form-control"  placeholder="CODE">
+        <input name="code" type="text" class="form-control"  placeholder="验证码">
         <img src="index.php?m=admin&f=login&a=code" alt="" onclick="this.src='index.php?m=admin&f=login&a=code&code='+Math.random()" style="margin-top: 10px">
 
     </div>

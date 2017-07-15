@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-06-30 09:23:01
-  from "E:\wamp\www\php\mvc\template\admin\main.html" */
+/* Smarty version 3.1.30, created on 2017-07-15 03:04:43
+  from "F:\wamp\www\travelapp\mvc\template\admin\main.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5955fc55d7a789_78326476',
+  'unifunc' => 'content_59696a2ba33b22_50017384',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '8e8051e5798c6ddf40cbeafc18ad8716b6143b40' => 
+    '991052ad1c001d48d3e9ee6c54bab1433aca2cac' => 
     array (
-      0 => 'E:\\wamp\\www\\php\\mvc\\template\\admin\\main.html',
-      1 => 1498807376,
+      0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\admin\\main.html',
+      1 => 1499749678,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5955fc55d7a789_78326476 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59696a2ba33b22_50017384 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -173,7 +173,7 @@ function content_5955fc55d7a789_78326476 (Smarty_Internal_Template $_smarty_tpl)
 </head>
 <body>
 <!--帧窗口   技术-->
-<span><a href="index.html?m=admin&f=login&a=logout" class="out">安全退出</a></span>
+<span><a href="index.php?m=admin&f=login&a=logout" class="out">安全退出</a></span>
 <div class="shijian">
     <div class="nian w"></div>
     <div class="yue w"></div>
@@ -186,7 +186,8 @@ function content_5955fc55d7a789_78326476 (Smarty_Internal_Template $_smarty_tpl)
     <a href="##">返回主页</a>
 </div>
 <header>
-    欢迎<?php echo '<?php ';?>echo $_SESSION["uname"]<?php echo '?>';?>来到新闻管理系统
+    欢迎<?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+来到新闻管理系统
 </header>
 <div class="box">
     <div class="left">
@@ -198,58 +199,58 @@ function content_5955fc55d7a789_78326476 (Smarty_Internal_Template $_smarty_tpl)
                         <a href="index.php?m=admin&f=user&a=add" target="iframe">添加用户</a>
                     </li>
                     <li>
-                        <a href="##" target="iframe">查看用户</a>
+                        <a href="index.php?m=admin&f=user&a=chakan" target="iframe">查看用户</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!--<li>-->
+                <!--<a href="javascript:;" class="m1 a">角色管理</a>-->
+                <!--<ul class="b">-->
+                    <!--<li>-->
+                        <!--<a href="index.php?m=admin&f=role&a=add" target="iframe">添加角色</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="addcon.php" target="iframe">查看角色</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+
+            <li>
+                <a href="javascript:;" class="m2 a">分类管理</a>
+                <ul class="b">
+                    <li>
+                        <a href="index.php?m=admin&f=shop&a=add" target="iframe">添加分类</a>
+                    </li>
+                    <li>
+                        <a href="index.php?m=admin&f=shop&a=lookfl"  target="iframe">查看分类</a>
                     </li>
                 </ul>
             </li>
 
             <li>
-                <a href="javascript:;" class="m1 a">角色管理</a>
+                <a href="javascript:;" class="m3 a">商品管理</a>
                 <ul class="b">
                     <li>
-                        <a href="index.php?m=admin&f=role&a=add" target="iframe">添加角色</a>
+                        <a href="index.php?m=admin&f=shop&a=addshop" target="iframe">添加商品</a>
                     </li>
                     <li>
-                        <a href="addcon.php" target="iframe">查看角色</a>
+                        <a href="index.php?m=admin&f=shop&a=lookshop" target="iframe">查看商品</a>
                     </li>
                 </ul>
             </li>
 
-            <li>
-                <a href="javascript:;" class="m2 a">位置管理</a>
-                <ul class="b">
-                    <li>
-                        <a href="addPos.php" target="iframe">添加位置</a>
-                    </li>
-                    <li>
-                        <a href="showpos.php" target="iframe">查看位置</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="javascript:;" class="m3 a">分类管理</a>
-                <ul class="b">
-                    <li>
-                        <a href="index.php?m=admin&f=category&a=add" target="iframe">添加分类</a>
-                    </li>
-                    <li>
-                        <a href="showpos.php" target="iframe">删除留言</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="javascript:;" class="m3 a">内容管理</a>
-                <ul class="b">
-                    <li>
-                        <a href="index.php?m=admin&f=category&a=add" target="iframe">添加内容</a>
-                    </li>
-                    <li>
-                        <a href="index.php?m=admin&f=lists&a=add" target="iframe">查看内容</a>
-                    </li>
-                </ul>
-            </li>
+            <!--<li>-->
+                <!--<a href="javascript:;" class="m3 a">内容管理</a>-->
+                <!--<ul class="b">-->
+                    <!--<li>-->
+                        <!--<a href="index.php?m=admin&f=category&a=add" target="iframe">添加内容</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="index.php?m=admin&f=lists&a=add" target="iframe">查看内容</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</li>-->
 
 
             <li>

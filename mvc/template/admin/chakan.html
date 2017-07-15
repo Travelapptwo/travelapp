@@ -24,14 +24,14 @@
 <table class="table table-bordered">
     <tr>
         <td>id</td>
-        <td>位置</td>
+        <td>name</td>
         <td>操作</td>
     </tr>
-    {foreach $re as $v}
+    {foreach $result as $v}
     <tr>
-        <td>{$v["posid"]}</td>
-        <td>{$v["posname"]}</td>
-        <td><a href="index.php?f=lists&m=admin&a=del&id={$v['posid']}">删除</a></td>
+        <td>{$v["aid"]}</td>
+        <td>{$v["aname"]}</td>
+        <td><a href="index.php?f=user&m=admin&a=del&id={$v['aid']}">删除</a></td>
     </tr>
     {/foreach}
 

@@ -2,11 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06c89a36-69c2-46df-9037-1430380b652f" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/module/admin/shop.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/template/admin/chakan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/template/admin/lookshop.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/0ae7f47d75a2a7104f90c48a8531d3bf735bd8b4_0.file.index.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/3037e14a45c9a9129b1f77f534732971d7c889e4_0.file.xiangqing.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/3a67af4ed20d183d475824ab8c384798393fd724_0.file.list.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/54b3973db0ae16909e299da769bc84aeb527dc19_0.file.myself.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/64f57997d54c29ab268a27e38e8b889167a5e48b_0.file.writeMessage.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/6e489d08141cecbd741fe255041caee6806cdc81_0.file.index.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/7570098fecf718fffff217d718ac151029338685_0.file.mymesschange.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/b4fb73fe70636e80f2df294d954161a540c849e7_0.file.category.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/bf7df76d857773d623cb16ecec8abe6c5f0f088a_0.file.myselfmess.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/compile/cfbeba8ac6f161734e0160ecceaf5432ee605f02_0.file.logins.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/08cdb0bb181671965d09a9245a7a7bfeb6ce8419_0.file.index.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/13a95f5da917b2d030305dd8abd614b2f8720bf4_0.file.listsAdd.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/144373c0427b3f46e2e7be68524509863e7c39ef_0.file.logins.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/1854691d92df145f7c44396aab2d90f6df1de463_0.file.index.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/1bf88f79f0e39c31b882262ef92048d74bff40a5_0.file.member.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/243d6c42edaca48841ef5d651aa24fa90bc20ed4_0.file.register.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/39b46b63e3cac96d9084eb53705fed57d22b856a_0.file.lookshop.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/43297535ca66c41493546120744f799bca3b9386_0.file.addCategory.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/50a31c943714faff826d2b8a6b0f21562dc98987_0.file.main.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/514303fd4b49cb97d4504ecec809efad97af6f98_0.file.listsAdd.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/52e9ef274c0b77af80aa07eb8061d799e1370af5_0.file.addRole.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/574e1f8a2a54ec6569e676c67cf7f069e4d90d65_0.file.addUser.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/8e8051e5798c6ddf40cbeafc18ad8716b6143b40_0.file.main.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/9d0a8eaa3f67df09144c7ac0e3c306e5d078f4f2_0.file.index.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/a81dd4583966fa3589853a4a1a2bd1c39974c206_0.file.header.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/aafa6e283c9c2ad72a0b2e049aa83cbf8c94f63f_0.file.chakan.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/af729f9fe43d9fc42d4f4c5a0630a13bee7f36a3_0.file.login.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/cb200e23ed07157a6a9b6e30ba734322faf539e5_0.file.addPos.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/cd2be5b40bb8b371650b205c6f15973dff473c01_0.file.index.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/d54a4871e8498f7fbb450e53fddb54d6a0760e87_0.file.info.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/dbc064206a2112c51fe771ee2de2846f507b912d_0.file.addPos.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/e15081419febff074d6c606ebc4411ed32ddf8f0_0.file.addRole.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/ee043b269aeddcb313a36e865e634d470a44543f_0.file.index.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/php/mvc/compile/index.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/compile/6e489d08141cecbd741fe255041caee6806cdc81_0.file.index.html.php" afterPath="$PROJECT_DIR$/mvc/compile/6e489d08141cecbd741fe255041caee6806cdc81_0.file.index.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/template/index/index.html" afterPath="$PROJECT_DIR$/mvc/template/index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/module/admin/lists.class.php" afterPath="$PROJECT_DIR$/mvc/module/admin/lists.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/module/admin/login.class.php" afterPath="$PROJECT_DIR$/mvc/module/admin/login.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/module/admin/position.class.php" afterPath="$PROJECT_DIR$/mvc/module/admin/position.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/module/admin/user.class.php" afterPath="$PROJECT_DIR$/mvc/module/admin/user.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/template/admin/index.html" afterPath="$PROJECT_DIR$/mvc/template/admin/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/template/admin/listsAdd.html" afterPath="$PROJECT_DIR$/mvc/template/admin/listsAdd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/template/admin/main.html" afterPath="$PROJECT_DIR$/mvc/template/admin/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/mvc/module/admin/login.class.php" afterPath="$PROJECT_DIR$/php/mvc/module/admin/login.class.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/php/mvc/compile/0945fb0341790be7295c2396de89fdd510fe803c_0.file.lookshops.html.php" afterPath="$PROJECT_DIR$/mvc/template/admin/lookshops.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/php/mvc/compile/125f3268192bdd58b6bc0b0fc2c2c5bddb9598cf_0.file.addUser.html.php" afterPath="$PROJECT_DIR$/mvc/template/admin/addUser.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/php/mvc/compile/523dc4caa24b9cb9b44dece173f78aeabd994a21_0.file.addfl.html.php" afterPath="$PROJECT_DIR$/mvc/template/admin/addfl.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/php/mvc/compile/5c101f125d7d9c58d5548dc8ddf18e40ed6db114_0.file.lookfl.html.php" afterPath="$PROJECT_DIR$/mvc/template/admin/lookfl.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/php/mvc/compile/6e26d38f658347c5a46492467bfdc51f9e2b1244_0.file.addshop.html.php" afterPath="$PROJECT_DIR$/mvc/template/admin/addshop.html" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,41 +72,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/template/index/category.html">
+      <file leaf-file-name="login.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/module/admin/login.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1518">
-              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+            <state relative-caret-position="-79">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/index.php">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mvc/template/admin/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mvc/template/index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="289" column="13" selection-start-line="289" selection-start-column="13" selection-end-line="289" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/module/index/category.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="-650">
+              <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -77,6 +103,8 @@
         <option value="$PROJECT_DIR$/mvc/template/index/category.html" />
         <option value="$PROJECT_DIR$/mvc/module/index/category.class.php" />
         <option value="$PROJECT_DIR$/mvc/template/index/index.html" />
+        <option value="$PROJECT_DIR$/mvc/template/admin/index.html" />
+        <option value="$PROJECT_DIR$/mvc/module/admin/login.class.php" />
       </list>
     </option>
   </component>
@@ -84,6 +112,9 @@
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -117,8 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,6 +262,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,7 +271,16 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\wamp\www\travelapp\mvc\template" />
+      <recent name="F:\wamp\www\travelapp\mvc\module" />
+      <recent name="F:\wamp\www\travelapp\php\mvc\module" />
+      <recent name="F:\wamp\www\travelapp\php\mvc\template" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -254,8 +294,37 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -265,12 +334,14 @@
       <option name="presentableId" value="Default" />
       <updated>1499659586450</updated>
       <workItem from="1499659600138" duration="2251000" />
-      <workItem from="1500023483367" duration="474000" />
+      <workItem from="1500023483367" duration="1577000" />
+      <workItem from="1500044263563" duration="629000" />
+      <workItem from="1500078467214" duration="2378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2725000" />
+    <option name="totallyTimeSpent" value="6835000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,12 +353,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20801815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21028744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -311,6 +382,14 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -319,6 +398,86 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mvc/template/index/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/template/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6358">
+          <caret line="289" column="13" selection-start-line="289" selection-start-column="13" selection-end-line="289" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/template/admin/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/module/index/category.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/template/index/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/template/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6358">
+          <caret line="289" column="13" selection-start-line="289" selection-start-column="13" selection-end-line="289" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/template/admin/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/module/index/category.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/template/index/category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1518">
@@ -369,8 +528,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mvc/template/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
+        <state relative-caret-position="6358">
           <caret line="289" column="13" selection-start-line="289" selection-start-column="13" selection-end-line="289" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/module/index/login.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/template/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/mvc/template/admin/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="237" column="13" selection-start-line="237" selection-start-column="13" selection-end-line="237" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/mvc/module/admin/login.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/module/admin/login.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/template/admin/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
           <folding />
         </state>
       </provider>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-12 05:22:57
-  from "E:\sahd\wamp\www\php\mvc\template\admin\lookshops.html" */
+/* Smarty version 3.1.30, created on 2017-07-15 03:04:58
+  from "F:\wamp\www\travelapp\mvc\template\admin\lookshops.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59659611cd2e54_54223115',
+  'unifunc' => 'content_59696a3a46beb2_22673445',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '0945fb0341790be7295c2396de89fdd510fe803c' => 
+    'c24b75497bd3376bb8e0f0da85943fe8324364ba' => 
     array (
-      0 => 'E:\\sahd\\wamp\\www\\php\\mvc\\template\\admin\\lookshops.html',
-      1 => 1499829774,
+      0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\admin\\lookshops.html',
+      1 => 1499840300,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59659611cd2e54_54223115 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59696a3a46beb2_22673445 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 </html><!DOCTYPE html>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 19:39:50
-  from "E:\sahd\wamp\www\php\mvc\template\admin\addUser.html" */
+/* Smarty version 3.1.30, created on 2017-07-15 03:04:46
+  from "F:\wamp\www\travelapp\mvc\template\admin\addUser.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59626a66466a37_14937258',
+  'unifunc' => 'content_59696a2e360972_05417567',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '125f3268192bdd58b6bc0b0fc2c2c5bddb9598cf' => 
+    '3896d59d0baef1c21d22627e3d2b86a946bd0b62' => 
     array (
-      0 => 'E:\\sahd\\wamp\\www\\php\\mvc\\template\\admin\\addUser.html',
-      1 => 1499621198,
+      0 => 'F:\\wamp\\www\\travelapp\\mvc\\template\\admin\\addUser.html',
+      1 => 1499621200,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59626a66466a37_14937258 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59696a2e360972_05417567 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">

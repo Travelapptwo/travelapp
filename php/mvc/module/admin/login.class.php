@@ -39,8 +39,8 @@ class login extends main{
                     echo "<script>alert('登陆成功');location.href='index.php?m=admin&f=login&a=main'</script>";
                 }
             }
-            echo "<script>alert('登陆失败');location.href='index.php?m=admin&f=login'</script>";
         }
+        echo "<script>alert('登陆失败');location.href='index.php?m=admin&f=login'</script>";
     }
 
     function main(){
