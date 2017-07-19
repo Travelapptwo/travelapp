@@ -1,29 +1,45 @@
 $(function () {
-    var login = $(".zBottom input[name='uname']");
-    login.focus(function () {
+    var loginuname = $(".zBottom input[name='uname']");
+    loginuname.focus(function () {
         $(".dlzhong .tishi ").css("display", "none");
     });
     var uname = "";
-    login.blur(function () {
+    loginuname.blur(function () {
         var uname = $(this).val();
         if (uname == "") {
             $(".dlzhong .tishi ").css("display", "block");
-        } else {
-
         }
-
     });
+    var loginupass = $(".zBottom input[name='upass']");
+    loginupass.focus(function () {
+        $(".dlzhong .tishi ").css("display", "none");
+    });
+    var upass = "";
+    loginupass.blur(function () {
+        var upass = $(this).val();
+        if (upass == "") {
+            $(".dlzhong .tishi ").css("display", "block");
+        }
+        var login = $(".zBottom input[name='uname']");
+        login.focus(function () {
+            $(".dlzhong .tishi ").css("display", "none");
+        });
+    });
+
     $(".dlCon").click(function () {
         $.ajax({
             url: "index.php?m=index&f=login&a=loginUname",
             type: "post",
             data: {uname: $(".zBottom input[name='uname']").val()},
             success: function (data) {
-                if (data == "ok") {
+                console.log(data)
+                $(".dlzhong .tishi").html(data);
+                if (data == "unameok") {
+                    $(".dlzhong .tishi").css("display", "none");
                     $("#Username").css("display", "none");
                     $("#Userpassword").css("display", "block");
                 } else {
-                    $(".dlzhong .tishi").html("用户名输入错误!");
+                    $(".dlzhong .tishi").html("此用户名不存在");
                     $(".dlzhong .tishi").css("display", "block");
                 }
             }
@@ -34,25 +50,22 @@ $(function () {
         $.ajax({
             url: "index.php?m=index&f=login&a=loginUpass",
             type: "post",
-            data: {upass: upass},
+            data: {upass: upass,uname: $(".zBottom input[name='uname']").val()},
             success: function (data) {
-               /* console.log(data);
+                console.log(data);
+                $(".dlzhong .tishi").html(data);
+                $(".dlzhong .tishi").css("display", "block");
                 if (data == "ok") {
-
-                    // location.href="index.php";
-                }*/
-                if(data=="ok"){
-                    //alert(1)
-                    $("#Username").css("display","none");
-                    $("#Userpassword").css("display","block");
-                    location.href="index.php";
-                }else{
-                   // alert(2)
-                    $(".dlzhong .tishi").html("用户名输入错误!");
-                    $(".dlzhong .tishi").css("display","block");
+                    $(".dlzhong .tishi").css("display", "none");
+                    location.href = "index.php";
+                } else {
+                    $(".dlzhong .mimatishi").html("密码输入错误!");
+                    $(".dlzhong .mimatishi").css("display", "block");
                 }
             }
         })
-    })
+    });
 });
+
+
 

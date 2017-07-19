@@ -2,55 +2,69 @@
 
 class login extends indexMain
 {
-    function init(){
-        $login=$this->session->get("indexLogin");
 
-        $uid=$this->session->get("uid");
-
-        $uname=$this->session->get("uname");
-        $this->smarty->assign("userlogin",$login);
-        $this->smarty->assign("uid",$uid);
-        $this->smarty->assign("uname",$uname);
-        $this->smarty->display("login.html");
-    }
     function __construct()
     {
         parent::__construct();
         $this->db = new db("user");
+        $this->uname = "";
     }
 
 
     function loginUname()
     {
         $uname = $_POST["uname"];
+        if (empty($uname)) {
+            echo "用户名不能为空";
+            exit;
+        }
         $result = $this->db->select();
         foreach ($result as $v) {
             if ($v["uname"] == $uname) {
                 $this->session->set("uname", $v["uname"]);
-                echo "ok";
+                $this->session->set("uid", $v["uid"]);
+                $this->uname = $uname;
+                echo "unameok";
                 exit();
             }
         }
+
     }
 
     function loginUpass()
     {
         $upass = $_POST["upass"];
-        $result = $this->db->select();
-        foreach ($result as $v) {
-            if ($v["upass"] == md5($upass)) {
-                $this->session->set("indexLogin", "yes");
-                $this->session->set("upass", $v["upass"]);
-                $this->session->set("uid", $v["uid"]);
-                echo "ok";
-                exit();
-            }
+        $uname = $_POST["uname"];
+        if (empty($upass)) {
+            echo "密码不能为空";
+            exit;
+        }
+        $result = $this->db->where("uname='{$uname}'")->select();
+        /*var_dump($result);
+        exit();*/
+        $result = $result[0];
+        if ($result['upass'] == md5($upass)) {
+            $this->session->set("indexLogin", "yes");
+            $this->session->set("upass", $result['upass']);
+           /* $this->session->set("jibie", $result['jibie']);
+            $this->session->set("umess", $result['umess']);
+            $this->session->set("uhome", $result['uhome']);
+            $this->session->set("ubirthday", $result['ubirthday']);*/
+            echo "ok";
+            exit();
+        } else {
+            echo "密码错误";
+            exit();
         }
     }
-    function logout(){
+
+
+    function logout()
+    {
         $this->session->clear();
         echo "ok";
     }
+
     function register()
     {
         $uname = $_POST["uname"];
@@ -96,5 +110,7 @@ class login extends indexMain
             echo "注册成功";
             exit;
         }
+
+
     }
 }

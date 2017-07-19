@@ -6,6 +6,13 @@ class index extends indexMain
     {
         $this->smarty->assign("login", $this->session->get("indexLogin"));
         $this->smarty->assign("mname", $this->session->get("mname"));
+
+       /* $this->smarty->assign("uname", $this->session->get("uname"));
+        $this->smarty->assign("jibie", $this->session->get("jibie"));
+        $this->smarty->assign("umess", $this->session->get("umess"));
+        $this->smarty->assign("uhome", $this->session->get("uhome"));
+        $this->smarty->assign("ubirthday", $this->session->get("ubirthday"));*/
+        
         if($uid=$this->session->get("uid")){
             $dbus=new db("user");
             $resultus = $dbus->where("uid=".$uid)->select();

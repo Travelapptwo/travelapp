@@ -240,20 +240,12 @@ ul, li {
     float: right;
     width: 1.35rem;
     height: 0.5rem;
-    padding-top: 0.21rem;
+    padding-top: 0.12rem;
     margin-right: 0.3rem;
     position: relative;
 }
 
 .banner-bottom .loginBtn, .banner-bottom .regBtn {
-/*    margin: 0.1rem 0.25rem;
-    display: block;
-    width: 40%;
-    height: 0.6rem;
-    float: left;
-    text-align: center;
-    line-height: 0.6rem;
-    border-radius: 0.1rem;*/
     color: #007aff;
 }
 div.wel{
@@ -380,7 +372,7 @@ div.wel{
 }
 
 .liebiao ul {
-    width: 6.6rem;
+    width: auto;
     height: 3.8rem;
     z-index: 999;
     margin: 0 auto;
@@ -634,7 +626,7 @@ a {
 
 .caini-con > li > a .touxiang {
     float: left;
-    padding-left: 0.06rem;
+    padding-left: 0.1rem;
     width: 1.68rem;
     height: 0.46rem;
     overflow: hidden;
@@ -642,16 +634,17 @@ a {
 }
 
 .caini-con > li > a .touxiang li {
-    width: 0.33rem;
-    height: 0.33rem;
+    width: 0.25rem;
+    height: 0.25rem;
     float: left;
-    background: #0044fd;
-    border: 0.03rem solid #fff;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    margin-left: -0.1rem;
-    box-shadow: 0.01rem 0.01rem 0.1rem 0.02rem rgba(0, 68, 253, 44);
+    margin-right: 0.05rem;
+    /*background: #0044fd;*/
+    /*border: 0.03rem solid #fff;*/
+    /*border-radius: 50%;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*margin-left: -0.1rem;*/
+    /*box-shadow: 0.01rem 0.01rem 0.1rem 0.02rem rgba(0, 68, 253, 44);*/
 }
 
 .caini-con > li > a .touxiang li:nth-child(1) {
@@ -659,13 +652,13 @@ a {
 }
 
 .caini-con > li > a .touxiang li img {
-    width: 0.6rem;
-    height: 0.42rem;
-    position: absolute;
-    left: -50%;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    width: 0.25rem;
+    height: 0.25rem;
+    /*position: absolute;*/
+    /*left: -50%;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
 }
 
 .caini-con > li > a .touxiang li p {
@@ -708,7 +701,7 @@ a {
     color: #f63939;
     font-family: "苹方";
     position: absolute;
-    top: 0.08rem;
+    top: 0.02rem;
     left: 0.26rem;
     margin: auto;
 }
