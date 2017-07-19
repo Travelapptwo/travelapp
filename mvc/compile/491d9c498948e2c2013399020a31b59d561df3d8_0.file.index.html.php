@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-19 11:16:29
+/* Smarty version 3.1.30, created on 2017-07-19 11:57:15
   from "D:\wamp\www\travelapp\mvc\template\index\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596f236d0c0284_28417774',
+  'unifunc' => 'content_596f2cfb67f167_98234890',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '491d9c498948e2c2013399020a31b59d561df3d8' => 
     array (
       0 => 'D:\\wamp\\www\\travelapp\\mvc\\template\\index\\index.html',
-      1 => 1500455788,
+      1 => 1500458137,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596f236d0c0284_28417774 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596f2cfb67f167_98234890 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

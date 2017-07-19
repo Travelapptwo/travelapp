@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-19 10:11:01
+/* Smarty version 3.1.30, created on 2017-07-19 12:06:12
   from "D:\wamp\www\travelapp\mvc\template\index\logins.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596f1415edeb81_64862992',
+  'unifunc' => 'content_596f2f1497a457_18565133',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '92799f07ac145f0836912d797ced5fd1c7713d22' => 
     array (
       0 => 'D:\\wamp\\www\\travelapp\\mvc\\template\\index\\logins.html',
-      1 => 1500451854,
+      1 => 1500458766,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596f1415edeb81_64862992 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596f2f1497a457_18565133 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -70,8 +70,11 @@ function content_596f1415edeb81_64862992 (Smarty_Internal_Template $_smarty_tpl)
             <div class="zTop">·· Username</div>
             <div class="zBottom">
                 <input type="text" placeholder="您可以输入手机号或者邮箱号" name="uname">
+                <div class="line"></div>
             </div>
             <div class="tishi">
+                <img src="<?php echo IMG_PATH;?>
+/sy_tishi.png" alt="">
                 <p>请输入用户名！</p>
             </div>
         </div>
@@ -84,15 +87,20 @@ function content_596f1415edeb81_64862992 (Smarty_Internal_Template $_smarty_tpl)
     </div>
     <div class="dl" id="Userpassword">
         <div class="dltop">
-            <div class="dlname">&#xe616;</div>
-            <div class="dlpass">&#xe7bd;</div>
+            <div class="dlname" style="background: #40e94c">&#xe616;</div>
+            <div class="dlpass" style="background: #4063e9">&#xe7bd;</div>
         </div>
         <div class="dlzhong">
             <div class="zTop">·· Userpassword</div>
             <div class="zBottom">
                 <input type="password" placeholder="您可以输入您的密码" name="upass">
+                <div class="line"></div>
+                <img src="<?php echo IMG_PATH;?>
+/dyl_dlcg.png" alt="">
             </div>
             <div class="tishi">
+                <img src="<?php echo IMG_PATH;?>
+/sy_tishi.png" alt="">
                 <p>请输入密码！</p>
             </div>
         </div>
@@ -102,8 +110,6 @@ function content_596f1415edeb81_64862992 (Smarty_Internal_Template $_smarty_tpl)
             <p>注册</p>
             <p>REGIST</p>
         </a>
-
-
     </div>
     <!--第三方登录-->
     <div class="dsf">

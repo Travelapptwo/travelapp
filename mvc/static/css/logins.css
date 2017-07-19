@@ -116,6 +116,7 @@ body, html {
     text-align: center;
     float: left;
     margin-left: 30%;
+    background: #2361d4;
 }
 
 .dlpass {
@@ -152,6 +153,7 @@ body, html {
     overflow: hidden;
     margin-top: 0.1rem;
     padding: 0.2rem;
+    position: relative;
 }
 
 .zBottom input {
@@ -162,7 +164,29 @@ body, html {
     border: 0;
     float: left;
 }
-
+.zBottom .line{
+    width: 0.32rem;
+    height: 0.08rem;
+    border-radius: 5.53rem;
+    background: #e61f36;
+    position: absolute;
+    right: 0.3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+.zBottom img{
+    width: 0.42rem;
+    height: 0.42rem;
+    float: right;
+    position: absolute;
+    right: 0.3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
 .zhmm {
     width: 90%;
     font-size: 0.35rem;
@@ -218,12 +242,19 @@ body, html {
 
 .dlzhong .tishi p {
     font-size: 0.24rem;
-    color: red;
-    text-align: center;
+    color: #c52a3d;
+    text-align: left;
     line-height: 0.8rem;
     z-index: 99;
 }
-
+.dlzhong .tishi img{
+    width: 0.4rem;
+    height: 0.4rem;
+    float: left;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    margin-right: 0.1rem;
+}
 #Userpassword {
     display: none;
 }
