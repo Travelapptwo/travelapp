@@ -65,7 +65,7 @@ $(function () {
                 $(".zBottom .line").css("display", "none");
                 if (data == "ok") {
                     // $(".dlzhong .tishi").css("display", "none");
-                    $(".dlzhong .tishi").html("即将跳转到首页...");
+                    $(".dlzhong .tishi").html("登陆成功，即将跳转到首页...");
                     $(".dlpass").css("background", "#40e94c");
                     $(".dlbtn").css("background", "#4063e9");
                     $(".zBottom img").css("display", "block");
