@@ -1,10 +1,38 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-08-07 05:48:51
+  from "E:\sahd\wamp\www\5.26\mvc\template\admin\index.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5987e3235fc6b5_25695037',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7d9fa95155f69248a4ba5bd702b19ea886e57c18' => 
+    array (
+      0 => 'E:\\sahd\\wamp\\www\\5.26\\mvc\\template\\admin\\index.html',
+      1 => 1502077664,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5987e3235fc6b5_25695037 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script src="{JS_PATH}/iframe.js"></script>
-    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/iframe.js"><?php echo '</script'; ?>
+>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/bootstrap.min.css">
     <style>
         body,html{
             width:100%;
@@ -74,4 +102,5 @@
     <button type="submit" class="button btn btn-success btn-large">提  交</button>
 </form>
 </body>
-</html>
+</html><?php }
+}

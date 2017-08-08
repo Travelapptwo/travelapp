@@ -1,12 +1,43 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-08-07 05:47:57
+  from "E:\sahd\wamp\www\5.26\mvc\template\admin\lookshops.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5987e2edae30a4_08851908',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '34c598bcef80f8df7494c88d09bc07198469e3c9' => 
+    array (
+      0 => 'E:\\sahd\\wamp\\www\\5.26\\mvc\\template\\admin\\lookshops.html',
+      1 => 1502077664,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5987e2edae30a4_08851908 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 
 </html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
-    <script src="{JS_PATH}/jquery.js"></script>
-    <script src="{JS_PATH}/iframe.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/bootstrap.min.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jquery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/iframe.js"><?php echo '</script'; ?>
+>
     <style>
         td{
             text-align: center;
@@ -41,29 +72,53 @@
             <td>routedetail</td>
             <td>操作</td>
         </tr>
-        {foreach $re as $v}
-        <tr attr={$v["id"]}>
-            <td attr="title">{$v["title"]}</td>
-            <td attr="posid">{$v["posid"]}</td>
-            <td attr="keyword">{$v["keyword"]}</td>
-            <td attr="alltime">{$v["alltime"]}</td>
-            <td attr="discount">{$v["discount"]}</td>
-            <td attr="price">{$v["price"]}</td>
-            <td attr="start">{$v["start"]}</td>
-            <td attr="end">{$v["end"]}</td>
-            <td attr="starttime">{$v["starttime"]}</td>
-            <td attr="traffic">{$v["traffic"]}</td>
-            <td attr="xingji">{$v["xingji"]}</td>
-            <td attr="routedetail">{$v["routedetail"]}</td>
-            <td><a href="index.php?m=admin&f=shop&a=delshop&id={$v['id']}">删除</a></td>
+        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['re']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
+        <tr attr=<?php echo $_smarty_tpl->tpl_vars['v']->value["id"];?>
+>
+            <td attr="title"><?php echo $_smarty_tpl->tpl_vars['v']->value["title"];?>
+</td>
+            <td attr="posid"><?php echo $_smarty_tpl->tpl_vars['v']->value["posid"];?>
+</td>
+            <td attr="keyword"><?php echo $_smarty_tpl->tpl_vars['v']->value["keyword"];?>
+</td>
+            <td attr="alltime"><?php echo $_smarty_tpl->tpl_vars['v']->value["alltime"];?>
+</td>
+            <td attr="discount"><?php echo $_smarty_tpl->tpl_vars['v']->value["discount"];?>
+</td>
+            <td attr="price"><?php echo $_smarty_tpl->tpl_vars['v']->value["price"];?>
+</td>
+            <td attr="start"><?php echo $_smarty_tpl->tpl_vars['v']->value["start"];?>
+</td>
+            <td attr="end"><?php echo $_smarty_tpl->tpl_vars['v']->value["end"];?>
+</td>
+            <td attr="starttime"><?php echo $_smarty_tpl->tpl_vars['v']->value["starttime"];?>
+</td>
+            <td attr="traffic"><?php echo $_smarty_tpl->tpl_vars['v']->value["traffic"];?>
+</td>
+            <td attr="xingji"><?php echo $_smarty_tpl->tpl_vars['v']->value["xingji"];?>
+</td>
+            <td attr="routedetail"><?php echo $_smarty_tpl->tpl_vars['v']->value["routedetail"];?>
+</td>
+            <td><a href="index.php?m=admin&f=shop&a=delshop&id=<?php echo $_smarty_tpl->tpl_vars['v']->value['id'];?>
+">删除</a></td>
         </tr>
-        {/foreach}
+        <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
 
     </table>
 
 
 </body>
-<script>
+<?php echo '<script'; ?>
+>
     $("td").dblclick(function(){
         var td=$(this);
         //1,取出当前td中的文本内容保存起来
@@ -119,5 +174,7 @@
             }
         })
     })
-</script>
-</html>
+<?php echo '</script'; ?>
+>
+</html><?php }
+}

@@ -10,7 +10,7 @@ define("COMING","yes");
 // 5.操作数据库-》面向对象
 $server=$_SERVER;    //当前路径信息
 define("ROOT_PATH",$server["DOCUMENT_ROOT"]);
-define("APP_PATH",ROOT_PATH."travelapp/mvc");
+define("APP_PATH",ROOT_PATH."5.26/mvc");
 define("LIBS_PATH",APP_PATH."/libs");
 define("MODULE_PATH",APP_PATH."/module");
 define("TPL_PATH",APP_PATH."/template");

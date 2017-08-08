@@ -1,11 +1,42 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-08-07 05:47:49
+  from "E:\sahd\wamp\www\5.26\mvc\template\admin\addfl.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5987e2e5b98e97_74477931',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '50f691d24047899e38cee8fb6a417044b892368a' => 
+    array (
+      0 => 'E:\\sahd\\wamp\\www\\5.26\\mvc\\template\\admin\\addfl.html',
+      1 => 1502077664,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5987e2e5b98e97_74477931 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
-    <script src="{JS_PATH}/jquery.min.js"></script>
-    <script src="{JS_PATH}/iframe.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/bootstrap.min.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/iframe.js"><?php echo '</script'; ?>
+>
     <style>
         td{
             text-align: center;
@@ -47,16 +78,29 @@
     </table>
 </form>
 </body>
-<script>
+<?php echo '<script'; ?>
+>
     var arr=[];
-    {foreach $re as $v}
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['re']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
     arr.push({
-        id:{$v["id"]},
-        name:'{$v["name"]}',
-        pid:{$v["pid"]}
+        id:<?php echo $_smarty_tpl->tpl_vars['v']->value["id"];?>
+,
+        name:'<?php echo $_smarty_tpl->tpl_vars['v']->value["name"];?>
+',
+        pid:<?php echo $_smarty_tpl->tpl_vars['v']->value["pid"];?>
+
 
     });
-    {/foreach}
+    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
     var a=0;
     var arrr=[];
     function getTree(pid,a){
@@ -85,5 +129,7 @@
            $("select").append(a);
 
         })
-</script>
-</html>
+<?php echo '</script'; ?>
+>
+</html><?php }
+}

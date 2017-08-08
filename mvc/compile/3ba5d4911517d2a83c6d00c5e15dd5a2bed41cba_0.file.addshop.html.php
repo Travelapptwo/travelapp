@@ -1,17 +1,60 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-08-07 05:47:52
+  from "E:\sahd\wamp\www\5.26\mvc\template\admin\addshop.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5987e2e8076092_98424892',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '3ba5d4911517d2a83c6d00c5e15dd5a2bed41cba' => 
+    array (
+      0 => 'E:\\sahd\\wamp\\www\\5.26\\mvc\\template\\admin\\addshop.html',
+      1 => 1502077664,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5987e2e8076092_98424892 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
-    <script src="{JS_PATH}/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="{URL_PATH}/static/editor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="{URL_PATH}/static/editor/ueditor.all.min.js"> </script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/bootstrap.min.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript" charset="utf-8" src="<?php echo URL_PATH;?>
+/static/editor/ueditor.config.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript" charset="utf-8" src="<?php echo URL_PATH;?>
+/static/editor/ueditor.all.min.js"> <?php echo '</script'; ?>
+>
     <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
     <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
-    <script type="text/javascript" charset="utf-8" src="{URL_PATH}/static/editor/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript" charset="utf-8" src="{JS_PATH}/upload.js"></script>
-    <script src="{JS_PATH}/iframe.js"></script>
+    <?php echo '<script'; ?>
+ type="text/javascript" charset="utf-8" src="<?php echo URL_PATH;?>
+/static/editor/lang/zh-cn/zh-cn.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript" charset="utf-8" src="<?php echo JS_PATH;?>
+/upload.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/iframe.js"><?php echo '</script'; ?>
+>
     <style>
         form{
             vertical-align: top;
@@ -73,22 +116,36 @@
             <td><input type="text" name="xingji"></td>
             <td>
                 <select name="posid" id="" >
-                    {foreach $res as $s}
-                <option value={$s["posid"]} >{$s["posname"]}</option>
-                {/foreach}
+                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['res']->value, 's');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['s']->value) {
+?>
+                <option value=<?php echo $_smarty_tpl->tpl_vars['s']->value["posid"];?>
+ ><?php echo $_smarty_tpl->tpl_vars['s']->value["posname"];?>
+</option>
+                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
             </select></td>
         </tr>
 
     </table>
     <div class="nr"> 内容:</div>
-     <script id="editor" type="text/plain" style="width:500px;height:300px;" name="routedefall"></script>
+     <?php echo '<script'; ?>
+ id="editor" type="text/plain" style="width:500px;height:300px;" name="routedefall"><?php echo '</script'; ?>
+>
     <input type="hidden" name="imgurl">
     <div class="uploadbox"></div>
 
     <input type="submit" class="btn btn-primary btn-lg btn-block" value="提交">
 </form>
 </body>
-<script>
+<?php echo '<script'; ?>
+>
     var obj = new upload();
     obj.size = 1024 * 1024 * 8.6;
     obj.selectBtnStyle.background = "red";
@@ -99,14 +156,26 @@
         document.querySelector("input[name=imgurl]").value=data;
     });
     var arr=[];
-    {foreach $re as $v}
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['re']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
     arr.push({
-        id:{$v["id"]},
-        name:'{$v["name"]}',
-        pid:{$v["pid"]}
+        id:<?php echo $_smarty_tpl->tpl_vars['v']->value["id"];?>
+,
+        name:'<?php echo $_smarty_tpl->tpl_vars['v']->value["name"];?>
+',
+        pid:<?php echo $_smarty_tpl->tpl_vars['v']->value["pid"];?>
+
 
     });
-    {/foreach}
+    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
     var a=0;
     var arrr=[];
     function getTree(pid,a){
@@ -145,5 +214,7 @@
 //    obj.up("upload.php",function(data){
 //        document.querySelector("input[name=imgurl]").value=data;
 //    });
-</script>
-</html>
+<?php echo '</script'; ?>
+>
+</html><?php }
+}

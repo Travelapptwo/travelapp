@@ -15,7 +15,7 @@ class login extends main{
     function check(){
         $code=$_POST["code"];
         if(!($code==$this->session->get("code"))){
-            echo "<script>alert('验证码错误');location.href='index.php?m=admin&f=login'</script>";
+            $this->jump("验证码错误", "index.php?m=admin&f=login");
             exit();
         }
         $result = new db("admin");
@@ -37,10 +37,12 @@ class login extends main{
                     $this->session->set("uname",$v["aname"]);
 //                    $this->session->set("rid",$v["aid"]);
                     echo "<script>alert('登陆成功');location.href='index.php?m=admin&f=login&a=main'</script>";
+                    exit();
                 }
             }
         }
         echo "<script>alert('登陆失败');location.href='index.php?m=admin&f=login'</script>";
+        exit();
     }
 
     function main(){

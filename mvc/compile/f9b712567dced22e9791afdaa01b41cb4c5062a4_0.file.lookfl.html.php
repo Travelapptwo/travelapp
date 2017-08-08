@@ -1,12 +1,46 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-08-07 05:47:51
+  from "E:\sahd\wamp\www\5.26\mvc\template\admin\lookfl.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5987e2e74f3995_87620364',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'f9b712567dced22e9791afdaa01b41cb4c5062a4' => 
+    array (
+      0 => 'E:\\sahd\\wamp\\www\\5.26\\mvc\\template\\admin\\lookfl.html',
+      1 => 1502077664,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5987e2e74f3995_87620364 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
-    <script src="{JS_PATH}/jquery.min.js"></script>
-    <script src="{JS_PATH}/iframe.js"></script>
-    <script src="{JS_PATH}/jq.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/bootstrap.min.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/iframe.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jq.js"><?php echo '</script'; ?>
+>
     <style>
         td{
             text-align: center;
@@ -35,17 +69,32 @@
     </table>
 
 </body>
-<script>
+<?php echo '<script'; ?>
+>
     var arr=[];
-    {foreach $re as $v}
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['re']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
     arr.push({
-        id:{$v["id"]},
-        name:'{$v["name"]}',
-        pid:{$v["pid"]},
-        Ename:'{$v["Ename"]}',
-        xingji:'{$v["xingji"]}'
+        id:<?php echo $_smarty_tpl->tpl_vars['v']->value["id"];?>
+,
+        name:'<?php echo $_smarty_tpl->tpl_vars['v']->value["name"];?>
+',
+        pid:<?php echo $_smarty_tpl->tpl_vars['v']->value["pid"];?>
+,
+        Ename:'<?php echo $_smarty_tpl->tpl_vars['v']->value["Ename"];?>
+',
+        xingji:'<?php echo $_smarty_tpl->tpl_vars['v']->value["xingji"];?>
+'
     });
-    {/foreach}
+    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
     var a=0;
     var arrr=[];
     function getTree(pid,a){
@@ -137,5 +186,7 @@
             }
         })
     })
-</script>
-</html>
+<?php echo '</script'; ?>
+>
+</html><?php }
+}

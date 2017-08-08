@@ -1,12 +1,44 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-08-07 05:52:22
+  from "E:\sahd\wamp\www\5.26\mvc\template\admin\main.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5987e3f640c0f3_26178856',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '1337319bb704615d7dbfdd19e34349ded642ceae' => 
+    array (
+      0 => 'E:\\sahd\\wamp\\www\\5.26\\mvc\\template\\admin\\main.html',
+      1 => 1502077940,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5987e3f640c0f3_26178856 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
-    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
-    <script src="{JS_PATH}/jquery.js"></script>
-    <script src="{JS_PATH}/iframe.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/iconfont.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jquery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/iframe.js"><?php echo '</script'; ?>
+>
     <style>
         a {
             text-decoration: none;
@@ -167,7 +199,8 @@
 </head>
 <body>
 <header>
-    <p><strong>欢迎来到 {$name} 来到后台管理系统</strong></p>
+    <p><strong>欢迎来到 <?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+ 来到后台管理系统</strong></p>
     <span><a href="index.php?m=admin&f=login&a=logout" class="out">安全退出</a></span>
     <div class="headRight">
         <input type="text" class="ssbtn" placeholder="search">
@@ -214,12 +247,15 @@
     <p>如果有什么意见或建议请联系管理员QQ : <a href="#">1026583651</a></p>
 </footer>
 </body>
-<script>
+<?php echo '<script'; ?>
+>
     $('nav ul li').click(function () {
         $('nav ul li').css("border-bottom", "0px");
         $(this).css("border-bottom", "3px solid #ff7f74");
     })
 
 
-</script>
-</html>
+<?php echo '</script'; ?>
+>
+</html><?php }
+}
